@@ -508,6 +508,18 @@ export const mockContent: Content[] = [
     isFavorite: false,
     genre: ["Biography", "Drama", "History"],
   },
+  {
+    id: "43",
+    title: "The Incredibles",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F6%2Fgracenote%2F68d243d0a22efbe95f4d1c590f4de391.jpg",
+    category: "Movie",
+    rating: 8.0,
+    review:
+      "Bob Parr has given up his superhero days to log in time as an insurance adjuster and raise his three children with his formerly heroic wife in suburbia. But when he receives a mysterious assignment, it's time to get back into costume.",
+    isFavorite: false,
+    genre: ["Action", "Adventure", "Animation", "Family"],
+  },
 
   // TV Series (Top 10, reordered as requested)
   {
@@ -655,6 +667,42 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Drama", "Mystery"],
   },
   {
+    id: "66",
+    title: "Harry Potter",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Ff%2Fgracenote%2Ff64f7257e7016caf28f2ed509a35cf03.jpg",
+    category: "TV",
+    rating: 7.8,
+    review:
+      "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+    isFavorite: false,
+    genre: ["Adventure", "Fantasy", "Family"],
+  },
+  {
+    id: "67",
+    title: "Mission: Impossible",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fgracenote%2F8ec10f3dba00f8289a06012762fc42f2.jpg",
+    category: "TV",
+    rating: 7.6,
+    review:
+      "Ethan Hunt and the IMF team must track down a terrifying new weapon that threatens all of humanity if it falls into the wrong hands. With control of the future and the fate of the world at stake, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan is forced to consider that nothing can matter more than the mission -- not even the lives of those he cares about most.",
+    isFavorite: false,
+    genre: ["Thriller", "Action", "Adventure"],
+  },
+  {
+    id: "68",
+    title: "The Fast and the Furious",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fb9807b9230f50883f357671cbccfdf9d.jpg",
+    category: "TV",
+    rating: 7.1,
+    review:
+      "Dominic Toretto is a Los Angeles street racer suspected of masterminding a series of big-rig hijackings. When undercover cop Brian O'Conner infiltrates Toretto's iconoclastic crew, he falls for Toretto's sister and must choose a side: the gang or the LAPD.",
+    isFavorite: false,
+    genre: ["Action", "Crime", "Thriller"],
+  },
+  {
     id: "52",
     title: "The Walking Dead",
     posterUrl:
@@ -798,6 +846,7 @@ export const mockContent: Content[] = [
     isFavorite: false,
     genre: ["Action", "Crime", "Drama"],
   },
+
   {
     id: "67",
     title: "You",
@@ -1037,6 +1086,30 @@ export const mockContent: Content[] = [
       "Jenna Ortega nails Wednesday Addams. Good mystery plot with great cinematography and costume design.",
     isFavorite: false,
     genre: ["Comedy", "Crime", "Family"],
+  },
+  {
+    id: "96",
+    title: "The Night Agent",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F4c5yUNcaff4W4aPrkXE6zr7papX.jpg",
+    category: "Web Series",
+    rating: 7.5,
+    review:
+      "Low-level FBI agent Peter Sutherland works in the basement of the White House manning a phone that never rings - until the night it does, propelling him into a conspiracy that leads all the way to the Oval Office.",
+    isFavorite: false,
+    genre: ["Drama", "Mystery", "Action", "Thriller"],
+  },
+  {
+    id: "97",
+    title: "Alice in Borderland",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FAc8ruycRXzgcsndTZFK6ouGA0FA.jpg",
+    category: "Web Series",
+    rating: 7.8,
+    review:
+      "Arisu - a listless, jobless and video-game-obsessed young man - suddenly finds himself in a strange, emptied-out version of Tokyo in which he and his friends must compete in dangerous games in order to survive.",
+    isFavorite: false,
+    genre: ["Action", "Horror", "Science Fiction", "Thriller", "Adventure"],
   },
   {
     id: "88",
