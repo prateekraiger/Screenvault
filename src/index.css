@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,18 +15,32 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-family: 'Quantico', Arial, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-heading {
+    font-family: 'Barrio', cursive;
+    letter-spacing: 0.5px;
   }
 }
 
 @theme inline {
   @keyframes line-shadow {
-  0% {
-    background-position: 0 0;
+    0% {
+      background-position: 0 0;
     }
-  100% {
-    background-position: 100% -100%;
+
+    100% {
+      background-position: 100% -100%;
     }
   }
 }

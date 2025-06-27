@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 import { mockContent } from "./data/mockData";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { FilterType } from "./types/Content";
@@ -25,10 +25,17 @@ import Loader from "@/components/Loader";
 function MainApp() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
+  const isFirstLoad = useRef(true);
 
   useEffect(() => {
     setLoading(true);
-    const timeout = setTimeout(() => setLoading(false), 900); // Show loader for 900ms
+    let timeout;
+    if (isFirstLoad.current) {
+      timeout = setTimeout(() => setLoading(false), 2000); // 2s for initial load
+      isFirstLoad.current = false;
+    } else {
+      timeout = setTimeout(() => setLoading(false), 1500); // 1.5s for route changes
+    }
     return () => clearTimeout(timeout);
   }, [location]);
 
@@ -67,7 +74,11 @@ function MainApp() {
 export default function App() {
   return (
     <BrowserRouter>
-      <MainApp />
+      <div className="relative min-h-screen flex flex-col">
+        <div className="flex-1">
+          <MainApp />
+        </div>
+      </div>
     </BrowserRouter>
   );
 }

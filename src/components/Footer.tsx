@@ -1,66 +1,50 @@
-import { Link } from "react-router-dom";
+import React from "react";
 import {
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
+  FaLinkedinIn,
   FaGithub,
-  FaPlayCircle,
+  FaTwitterSquare,
+  FaInstagram,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+const socialLinks = [
+  {
+    href: "https://www.linkedin.com/in/pratik-r1104/",
+    icon: <FaLinkedinIn />,
+  },
+  { href: "https://github.com/prateekraiger", icon: <FaGithub /> },
+  { href: "https://x.com/mrpratik753", icon: <FaTwitterSquare /> },
+  { href: "https://instagram.com/pratik.raiger", icon: <FaInstagram /> },
+];
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#23272F]/80 backdrop-blur-md border-t border-cyan-900/40 mt-12">
-      <div className="w-full px-4 py-8 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="flex items-center gap-2 text-center md:text-left justify-center md:justify-start w-full md:w-auto">
-          <FaPlayCircle className="w-6 h-6 text-cyan-400 drop-shadow" />
-          <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent select-none">
-            ScreenVault
-          </span>
+    <footer className="w-full bg-[#23272F] py-4 sm:py-6 text-cyan-100/80">
+      <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 sm:flex-row">
+        <p className="text-center text-xs sm:text-sm font-light md:text-left transition-colors duration-500 ease-in-out hover:text-cyan-400">
+          © {new Date().getFullYear()} ScreenVault. All rights reserved
+        </p>
+
+        <div className="flex justify-center gap-2 sm:gap-4 md:justify-start">
+          {socialLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-100/80 hover:text-cyan-400 transition-colors duration-500 ease-in-out text-base sm:text-lg"
+            >
+              {link.icon}
+            </a>
+          ))}
         </div>
 
-        <div className="flex items-center gap-6 justify-center w-full md:w-auto">
-          <a
-            href="https://github.com/prateekraiger"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-200/80 hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110"
-          >
-            <FaGithub className="w-5 h-5" />
-          </a>
-          <a
-            href="https://x.com/mrpratik753"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-200/80 hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110"
-          >
-            <FaTwitter className="w-5 h-5" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/pratik-r1104/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-200/80 hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110"
-          >
-            <FaLinkedin className="w-5 h-5" />
-          </a>
-          <a
-            href="https://instagram.com/pratik.raiger"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-200/80 hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110"
-          >
-            <FaInstagram className="w-5 h-5" />
-          </a>
-        </div>
-
-        <div className="text-center md:text-right w-full md:w-auto">
-          <Link
-            to="/privacy"
-            className="text-sm text-cyan-200/80 hover:text-cyan-400 transition-colors duration-300"
-          >
-            Privacy Policy
-          </Link>
-        </div>
+        <Link
+          to="/privacy"
+          className="text-center text-xs sm:text-sm font-light hover:underline md:text-right hover:text-cyan-400 transition-colors duration-500 ease-in-out"
+        >
+          Privacy Policy
+        </Link>
       </div>
     </footer>
   );
