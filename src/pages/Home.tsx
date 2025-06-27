@@ -10,14 +10,14 @@ const routes = [
     icon: <FaTv className="w-8 h-8 text-cyan-400 mb-3" />,
   },
   {
-    label: "Web Series",
-    path: "/web-series",
-    icon: <FaGlobe className="w-8 h-8 text-teal-400 mb-3" />,
-  },
-  {
     label: "Anime",
     path: "/anime",
     icon: <FaDragon className="w-8 h-8 text-pink-400 mb-3" />,
+  },
+  {
+    label: "Web Series",
+    path: "/web-series",
+    icon: <FaGlobe className="w-8 h-8 text-teal-400 mb-3" />,
   },
   {
     label: "Movies",
@@ -59,9 +59,9 @@ export default function Home() {
           <button
             key={route.path}
             onClick={() => navigate(route.path)}
-            className="w-full h-full flex"
+            className="w-full"
           >
-            <BackgroundGradient className="rounded-3xl p-10 min-h-[230px] flex flex-col flex-1 items-center justify-center cursor-pointer transition-transform hover:scale-105 bg-[#23272F] border border-cyan-900/40 shadow-2xl group">
+            <BackgroundGradient className="rounded-3xl p-10 flex flex-col items-center justify-center cursor-pointer transition-transform hover:scale-105 bg-[#23272F] border border-cyan-900/40 shadow-2xl group">
               {route.icon}
               <span className="text-2xl sm:text-3xl font-extrabold text-cyan-100 mb-2 tracking-tight group-hover:text-cyan-300 transition-colors">
                 <FlipText>{route.label}</FlipText>
