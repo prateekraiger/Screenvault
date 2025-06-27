@@ -1,14 +1,56 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StreamCatalog - Track Your Favorite Shows</title>
-    <meta name="description" content="Discover, track, and review your favorite movies, TV shows, and anime series with StreamCatalog.">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+  <title>StreamCatalog - Track Your Favorite Shows</title>
+  <meta name="description"
+    content="Discover, track, and review your favorite movies, TV shows, and anime series with StreamCatalog.">
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="StreamCatalog - Track Your Favorite Shows" />
+  <meta property="og:description"
+    content="Discover, track, and review your favorite movies, TV shows, and anime series with StreamCatalog." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/cover.png" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="StreamCatalog - Track Your Favorite Shows" />
+  <meta name="twitter:description"
+    content="Discover, track, and review your favorite movies, TV shows, and anime series with StreamCatalog." />
+  <meta name="twitter:image" content="/cover.png" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: #0f172a;
+      color-scheme: dark;
+    }
+
+    #root {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      #root {
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body aria-label="StreamCatalog App">
+  <div id="root" role="main"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
