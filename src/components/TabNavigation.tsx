@@ -30,7 +30,7 @@ const TabNavigation: React.FC<TabNavigationProps> = ({
             <button
               key={tab.id}
               onClick={() => onTabChange(tab.id)}
-              className={`flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap text-sm sm:text-base
+              className={`group flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 whitespace-nowrap text-sm sm:text-base
                 ${
                   isActive
                     ? "bg-gradient-to-r from-cyan-500 via-teal-500 to-blue-500 text-white shadow-lg border-none"
@@ -46,7 +46,9 @@ const TabNavigation: React.FC<TabNavigationProps> = ({
               }}
             >
               <Icon className="h-5 w-5" />
-              <span>{tab.label}</span>
+              <span className="transition-opacity duration-200 group-hover:opacity-0">
+                {tab.label}
+              </span>
             </button>
           );
         })}

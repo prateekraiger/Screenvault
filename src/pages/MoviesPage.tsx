@@ -1,7 +1,7 @@
 import React from "react";
 import { FlipText } from "@/components/magicui/flip-text";
 import { mockContent } from "@/data/mockData";
-import { Card } from "@/components/Card";
+import Card from "@/components/Card";
 
 export default function MoviesPage() {
   const movies = mockContent.filter((item) => item.category === "Movie");
@@ -12,9 +12,9 @@ export default function MoviesPage() {
           <FlipText>Movies</FlipText>
         </h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 gap-x-6">
         {movies.map((item) => (
-          <Card key={item.id} content={item} />
+          <Card key={item.id} {...item} />
         ))}
       </div>
     </div>
