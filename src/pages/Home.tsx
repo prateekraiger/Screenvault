@@ -1,4 +1,3 @@
-import React from "react";
 import { FlipText } from "@/components/magicui/flip-text";
 import { useNavigate } from "react-router-dom";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
@@ -25,6 +24,7 @@ export default function Home() {
           favorite movies, TV shows, web series, or anime!
         </p>
       </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full max-w-3xl px-4">
         {routes.map((route) => (
           <button

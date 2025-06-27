@@ -6,10 +6,10 @@ import { FaPlayCircle } from "react-icons/fa";
 
 const navigationLinks = [
   { to: "/", label: "Home" },
-  { to: "/tv", label: "TV Shows" },
-  { to: "/web-series", label: "Web Series" },
   { to: "/anime", label: "Anime" },
   { to: "/movies", label: "Movies" },
+  { to: "/tv", label: "TV Shows" },
+  { to: "/web-series", label: "Web Series" },
 ];
 
 export default function Navbar({

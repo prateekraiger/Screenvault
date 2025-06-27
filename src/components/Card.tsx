@@ -50,7 +50,7 @@ const Card: React.FC<CardProps> = ({
 
         {/* Category Badge (top left, always visible) */}
         <div className="absolute top-4 left-4 z-20">
-          <span className="px-3 py-1.5 bg-gradient-to-r from-cyan-700 to-cyan-900 text-white text-xs font-bold rounded-full border border-white/10 shadow-lg">
+          <span className="px-3 py-1.5 bg-gradient-to-r from-cyan-700 to-cyan-900 text-white text-xs font-bold rounded-full border border-white/10 shadow-lg transition-opacity duration-200 group-hover:opacity-0">
             {category}
           </span>
         </div>
