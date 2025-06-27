@@ -6,7 +6,7 @@ export const mockContent: Content[] = [
     id: "1",
     title: "Death Note",
     posterUrl:
-      "https://images.pexels.com/photos/8111086/pexels-photo-8111086.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FtCZFfYTIwrR7n94J6G14Y4hAFU6.jpg",
     category: "Anime",
     rating: 8.9,
     review:
@@ -18,7 +18,7 @@ export const mockContent: Content[] = [
     id: "2",
     title: "One Piece",
     posterUrl:
-      "https://images.pexels.com/photos/8111279/pexels-photo-8111279.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcMD9Ygz11zjJzAovURpO75Qg7rT.jpg",
     category: "Anime",
     rating: 9.0,
     review:
@@ -30,7 +30,7 @@ export const mockContent: Content[] = [
     id: "3",
     title: "Attack on Titan",
     posterUrl:
-      "https://images.pexels.com/photos/8111357/pexels-photo-8111357.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FhqRb1wyIVsaMukZElPBUXoJPqrR.jpg",
     category: "Anime",
     rating: 9.2,
     review:
@@ -42,7 +42,7 @@ export const mockContent: Content[] = [
     id: "4",
     title: "Naruto",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/naruto.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FxppeysfvDKVx775MFuH8Z9BlpMk.jpg",
     category: "Anime",
     rating: 8.7,
     review:
@@ -54,7 +54,7 @@ export const mockContent: Content[] = [
     id: "5",
     title: "Solo Levelling",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/solo-levelling.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fa7i9OdTUo9jZ1XoraCRIQNJ6ACX.jpg",
     category: "Anime",
     rating: 9.1,
     review:
@@ -66,7 +66,7 @@ export const mockContent: Content[] = [
     id: "6",
     title: "One Punch Man",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/one-punch-man.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FjbYJuxfZMpYDalkiOnBcCv9TaL.jpg",
     category: "Anime",
     rating: 8.8,
     review:
@@ -78,7 +78,7 @@ export const mockContent: Content[] = [
     id: "7",
     title: "Hunter x Hunter",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/hunter-x-hunter.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fi2EEr2uBvRlAwJ8d8zTG2Y19mIa.jpg",
     category: "Anime",
     rating: 9.3,
     review:
@@ -90,7 +90,7 @@ export const mockContent: Content[] = [
     id: "8",
     title: "Demon Slayer",
     posterUrl:
-      "https://images.pexels.com/photos/8111194/pexels-photo-8111194.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FxUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg",
     category: "Anime",
     rating: 8.6,
     review:
@@ -100,69 +100,9 @@ export const mockContent: Content[] = [
   },
   {
     id: "9",
-    title: "Steins;Gate",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/steins-gate.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "Anime",
-    rating: 9.4,
-    review:
-      "Mind-bending time travel thriller. The slow build-up pays off with an emotionally devastating and brilliant conclusion.",
-    isFavorite: false,
-    genre: ["Sci-Fi", "Thriller", "Drama"],
-  },
-  {
-    id: "10",
-    title: "My Hero Academia",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/my-hero-academia.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "Anime",
-    rating: 8.5,
-    review:
-      "Modern superhero anime with heart. Deku's journey and the world of quirks create an engaging superhero narrative.",
-    isFavorite: false,
-    genre: ["Action", "Superhero", "School"],
-  },
-  {
-    id: "11",
-    title: "Bleach",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/bleach.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "Anime",
-    rating: 8.3,
-    review:
-      "Epic supernatural battles with great character designs. The Soul Society arc is particularly outstanding.",
-    isFavorite: false,
-    genre: ["Action", "Supernatural", "Adventure"],
-  },
-  {
-    id: "12",
-    title: "Jujutsu Kaisen",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/jujutsu-kaisen.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "Anime",
-    rating: 8.7,
-    review:
-      "Dark supernatural action with incredible animation. The cursed energy system and character dynamics are fantastic.",
-    isFavorite: false,
-    genre: ["Action", "Supernatural", "School"],
-  },
-  {
-    id: "13",
-    title: "Monster",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/monster.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "Anime",
-    rating: 9.5,
-    review:
-      "Psychological masterpiece exploring the nature of evil. Johan is one of the most terrifying villains in anime.",
-    isFavorite: true,
-    genre: ["Psychological", "Thriller", "Drama"],
-  },
-  {
-    id: "14",
     title: "Vinland Saga",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/vinland-saga.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FvUHlpA5c1NXkds59reY3HMb4Abs.jpg",
     category: "Anime",
     rating: 9.1,
     review:
@@ -171,10 +111,10 @@ export const mockContent: Content[] = [
     genre: ["Historical", "Drama", "Action"],
   },
   {
-    id: "15",
+    id: "10",
     title: "Mob Psycho 100",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/mob-psycho.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FvR7hwaGQ0ySRoq1WobiNRaPs4WO.jpg",
     category: "Anime",
     rating: 8.9,
     review:
@@ -183,10 +123,10 @@ export const mockContent: Content[] = [
     genre: ["Supernatural", "Comedy", "Drama"],
   },
   {
-    id: "16",
+    id: "11",
     title: "Haikyuu!!",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/haikyuu.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F8WEr48swcqe89Zsy5sdrGCASlIg.jpg",
     category: "Anime",
     rating: 8.8,
     review:
@@ -195,10 +135,10 @@ export const mockContent: Content[] = [
     genre: ["Sports", "School", "Drama"],
   },
   {
-    id: "17",
+    id: "12",
     title: "Black Clover",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/black-clover.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FixM7N62bjtu5PGr1Tq3wuBbELxX.jpg",
     category: "Anime",
     rating: 8.2,
     review:
@@ -207,10 +147,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Magic", "Adventure"],
   },
   {
-    id: "18",
+    id: "13",
     title: "Dr. Stone",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/dr-stone.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FxbZQ3fDl0y5mt0ARwfeyrgQ4JTw.jpg",
     category: "Anime",
     rating: 8.4,
     review:
@@ -219,10 +159,10 @@ export const mockContent: Content[] = [
     genre: ["Sci-Fi", "Adventure", "Educational"],
   },
   {
-    id: "19",
+    id: "14",
     title: "Assassination Classroom",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/assassination-classroom.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FwOd98jDHkoWy2LZ4gSy67X1ihv1.jpg",
     category: "Anime",
     rating: 8.6,
     review:
@@ -231,10 +171,10 @@ export const mockContent: Content[] = [
     genre: ["Comedy", "School", "Action"],
   },
   {
-    id: "20",
+    id: "15",
     title: "Detective Conan",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/detective-conan.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F1o2o7RELi8rtRrTh8iHYkprpDrn.jpg",
     category: "Anime",
     rating: 8.3,
     review:
@@ -243,22 +183,10 @@ export const mockContent: Content[] = [
     genre: ["Mystery", "Detective", "Adventure"],
   },
   {
-    id: "21",
-    title: "Summertime Render",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/summertime-render.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "Anime",
-    rating: 8.7,
-    review:
-      "Underrated time-loop thriller with excellent mystery elements. The island setting creates perfect atmosphere.",
-    isFavorite: false,
-    genre: ["Mystery", "Supernatural", "Thriller"],
-  },
-  {
-    id: "22",
+    id: "16",
     title: "Spy x Family",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/spy-x-family.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F3r4LYFuXrg3G8fepysr4xSLWnQL.jpg",
     category: "Anime",
     rating: 8.5,
     review:
@@ -267,10 +195,10 @@ export const mockContent: Content[] = [
     genre: ["Comedy", "Family", "Action"],
   },
   {
-    id: "23",
+    id: "17",
     title: "Pluto",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/pluto.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fagf5sETjlO35s3EDA7wwGliZ5UW.jpg",
     category: "Anime",
     rating: 9.2,
     review:
@@ -279,10 +207,10 @@ export const mockContent: Content[] = [
     genre: ["Sci-Fi", "Drama", "Mystery"],
   },
   {
-    id: "24",
+    id: "18",
     title: "Chainsaw Man",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/chainsaw-man.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FnpdB6eFzizki0WaZ1OvKcJrWe97.jpg",
     category: "Anime",
     rating: 8.4,
     review:
@@ -291,22 +219,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Horror", "Supernatural"],
   },
   {
-    id: "25",
-    title: "Slam Dunk",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/slam-dunk.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "Anime",
-    rating: 8.9,
-    review:
-      "Classic basketball anime with incredible character growth. Sakuragi's transformation is inspiring.",
-    isFavorite: false,
-    genre: ["Sports", "School", "Drama"],
-  },
-  {
-    id: "26",
+    id: "19",
     title: "Dandadan",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/dandadan.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Ftaldr3CiOuHFC5kpxJoN34wLzqL.jpg",
     category: "Anime",
     rating: 8.6,
     review:
@@ -315,10 +231,10 @@ export const mockContent: Content[] = [
     genre: ["Supernatural", "Comedy", "Action"],
   },
   {
-    id: "27",
+    id: "20",
     title: "Mashle",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/mashle.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fj4uI3VfubinCGzatlZcRcjrLyZ1.jpg",
     category: "Anime",
     rating: 8.1,
     review:
@@ -327,10 +243,10 @@ export const mockContent: Content[] = [
     genre: ["Comedy", "Magic", "School"],
   },
   {
-    id: "28",
+    id: "21",
     title: "Fire Force",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/fire-force.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FAlx1QJZeiweoM0ZVSnJ7PnuqPQx.jpg",
     category: "Anime",
     rating: 8.2,
     review:
@@ -339,10 +255,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Supernatural", "Firefighting"],
   },
   {
-    id: "29",
+    id: "22",
     title: "Cyberpunk: Edgerunners",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/cyberpunk-edgerunners.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7jSWOc6jWSw5hZ78HB8Hw3pJxuk.jpg",
     category: "Anime",
     rating: 8.8,
     review:
@@ -351,10 +267,10 @@ export const mockContent: Content[] = [
     genre: ["Sci-Fi", "Action", "Cyberpunk"],
   },
   {
-    id: "30",
+    id: "23",
     title: "Tokyo Revengers",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/tokyo-revengers.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FarB3L9pZZBSzUPSC8BEv8c3X0bF.jpg",
     category: "Anime",
     rating: 8.3,
     review:
@@ -362,25 +278,49 @@ export const mockContent: Content[] = [
     isFavorite: true,
     genre: ["Time Travel", "Drama", "Action"],
   },
+  {
+    id: "24",
+    title: "Blue Lock",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FsTDTy73OYmKY51EK94Mc6AxogzR.jpg",
+    category: "Anime",
+    rating: 0,
+    review:
+      "High school soccer players from across Japan gather for a controversial project designed to create the best and most egoistic striker in the world.",
+    isFavorite: false,
+    genre: ["Animation", "Drama", "Sport", "Thriller"],
+  },
+  {
+    id: "25",
+    title: "Kuroko's Basketball",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdMARTbYFPmoxPqNySiRrhl53vau.jpg",
+    category: "Anime",
+    rating: 0,
+    review:
+      "In the story, Kagami Taiga has just enrolled into Seirin High School when he meets Kuroko Tetsuya of the school's basketball team. Kuroko happens to be the shadowy sixth member of the legendary Generation of Miracles basketball team. Together, Kagami and Kuroko aim to take their team to the inter-high school championship - against Kuroko's former teammates.",
+    isFavorite: false,
+    genre: ["Comedy", "Anime", "Drama", "Sport"],
+  },
+  {
+    id: "26",
+    title: "Kaiju No. 8",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FbJxGs0w5RAhaX4fIUQu511rvm0S.jpg",
+    category: "Anime",
+    rating: 0,
+    review:
+      "In a world plagued by creatures known as Kaiju, Kafka Hibino aspired to enlist in The Defense Force. He makes a promise to enlist with his childhood friend, Mina Ashiro. Soon, life takes them in separate ways. While employed cleaning up after Kaiju battles, Kafka meets Reno Ichikawa. Reno's determination to join The Defense Force reawakens Kafka's promise to join Mina and protect humanity.",
+    isFavorite: false,
+    genre: ["Anime", "Animation", "Action", "Adventure"],
+  },
 
   // Movies
   {
-    id: "31",
-    title: "The Shawshank Redemption",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/shawshank.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "Movie",
-    rating: 9.3,
-    review:
-      "Timeless tale of hope and friendship. Morgan Freeman and Tim Robbins deliver career-defining performances.",
-    isFavorite: true,
-    genre: ["Drama", "Crime"],
-  },
-  {
-    id: "32",
+    id: "27",
     title: "The Dark Knight",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/dark-knight.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F3%2Fgracenote%2F3c50cda300a43acf7a538c9aa9597791.jpg",
     category: "Movie",
     rating: 9.0,
     review:
@@ -389,10 +329,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Crime", "Drama"],
   },
   {
-    id: "33",
+    id: "28",
     title: "Fight Club",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/fight-club.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fgracenote%2F4d5260a099236bf88c292c7c8a277bfc.jpg",
     category: "Movie",
     rating: 8.8,
     review:
@@ -401,10 +341,10 @@ export const mockContent: Content[] = [
     genre: ["Drama", "Thriller"],
   },
   {
-    id: "34",
+    id: "29",
     title: "Inception",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/inception.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fbcb81d59b292170f9fbae7c75cac2572.jpg",
     category: "Movie",
     rating: 8.8,
     review:
@@ -413,10 +353,10 @@ export const mockContent: Content[] = [
     genre: ["Sci-Fi", "Action", "Thriller"],
   },
   {
-    id: "35",
+    id: "30",
     title: "Interstellar",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/interstellar.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F3%2Fgracenote%2F3ca13d8c8155b6e3242b03df4f420484.jpg",
     category: "Movie",
     rating: 8.6,
     review:
@@ -425,10 +365,10 @@ export const mockContent: Content[] = [
     genre: ["Sci-Fi", "Drama", "Adventure"],
   },
   {
-    id: "36",
+    id: "31",
     title: "Léon: The Professional",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/leon.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F5%2Fgracenote%2F54a2c9a7a012d87a332e9c1efa61c6d6.jpg",
     category: "Movie",
     rating: 8.5,
     review:
@@ -437,10 +377,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Crime", "Drama"],
   },
   {
-    id: "37",
+    id: "32",
     title: "Tenet",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/tenet.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fe%2Fgracenote%2Fe8c260df1f612494392ae154abfc9bdf.jpg",
     category: "Movie",
     rating: 7.4,
     review:
@@ -449,22 +389,22 @@ export const mockContent: Content[] = [
     genre: ["Action", "Sci-Fi", "Thriller"],
   },
   {
-    id: "38",
-    title: "WALL-E",
+    id: "33",
+    title: "The Wolf of Wall Street",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/wall-e.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fc%2Fgracenote%2Fcb97c9dcf726db77e99a9881d29629ba.jpg",
     category: "Movie",
     rating: 8.4,
     review:
-      "Pixar's environmental masterpiece. Heartwarming robot love story with important messages.",
+      "Jordan Belfort, portrayed by DiCaprio, finds himself a penny stockbroker in Long Island, eventually spending nearly two years behind bars. His refusal to assist in a securities fraud investigation from the 1990s leads to his incarceration. This case unveils deep-rooted corruption across Wall Street and corporate banks, with the mob also playing a part.",
     isFavorite: false,
-    genre: ["Animation", "Family", "Sci-Fi"],
+    genre: ["Drama", "Crime", "Comedy", "Biography"],
   },
   {
-    id: "39",
+    id: "34",
     title: "The Terminator",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/terminator.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fgracenote%2F4e26d12a9a0dbfdbaf6c349d5c8965c9.jpg",
     category: "Movie",
     rating: 8.0,
     review:
@@ -473,10 +413,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Sci-Fi", "Thriller"],
   },
   {
-    id: "40",
+    id: "35",
     title: "Titanic",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/titanic.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fa%2Fplex%2Fa61efc7d-8a0e-453d-9774-8e1515682214.jpg",
     category: "Movie",
     rating: 7.9,
     review:
@@ -485,10 +425,10 @@ export const mockContent: Content[] = [
     genre: ["Romance", "Drama", "History"],
   },
   {
-    id: "41",
+    id: "36",
     title: "Black Panther",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/black-panther.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F6%2Fgracenote%2F657d64e520ed594577de0a4fc6a4a1e4.jpg",
     category: "Movie",
     rating: 7.3,
     review:
@@ -497,10 +437,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Adventure", "Sci-Fi"],
   },
   {
-    id: "42",
-    title: "Blade Runner",
+    id: "37",
+    title: "Blade Runner 2049",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/blade-runner.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fplex%2F8f70f460-09f3-4736-831b-b52adc959016.jpg",
     category: "Movie",
     rating: 8.1,
     review:
@@ -509,10 +449,10 @@ export const mockContent: Content[] = [
     genre: ["Sci-Fi", "Thriller", "Neo-Noir"],
   },
   {
-    id: "43",
+    id: "38",
     title: "Mad Max: Fury Road",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/mad-max.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
     category: "Movie",
     rating: 8.1,
     review:
@@ -521,10 +461,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Adventure", "Sci-Fi"],
   },
   {
-    id: "44",
+    id: "39",
     title: "The Accountant",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/accountant.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fplex%2F87b772cd-1a24-4473-8c81-55b11cb8cef3.jpg",
     category: "Movie",
     rating: 7.3,
     review:
@@ -533,10 +473,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Crime", "Drama"],
   },
   {
-    id: "45",
+    id: "40",
     title: "The Amateur",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/amateur.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F7%2Fgracenote%2F790ad1144455fb7219fd0a916d9be718.jpg",
     category: "Movie",
     rating: 7.1,
     review:
@@ -545,10 +485,10 @@ export const mockContent: Content[] = [
     genre: ["Thriller", "Drama", "Action"],
   },
   {
-    id: "46",
+    id: "41",
     title: "A Working Man",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/working-man.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F9%2Fplex%2F9452c70f-34b4-4fda-a047-90ef87f0e810.jpg",
     category: "Movie",
     rating: 7.0,
     review:
@@ -557,10 +497,10 @@ export const mockContent: Content[] = [
     genre: ["Drama", "Family"],
   },
   {
-    id: "47",
+    id: "42",
     title: "Oppenheimer",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/oppenheimer.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
     category: "Movie",
     rating: 8.3,
     review:
@@ -569,12 +509,12 @@ export const mockContent: Content[] = [
     genre: ["Biography", "Drama", "History"],
   },
 
-  // TV Series
+  // TV Series (Top 10, reordered as requested)
   {
-    id: "48",
+    id: "43",
     title: "Breaking Bad",
     posterUrl:
-      "https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FineLOBPG8AZsluYwnkMpHRyu7L.jpg",
     category: "TV",
     rating: 9.5,
     review:
@@ -583,10 +523,10 @@ export const mockContent: Content[] = [
     genre: ["Drama", "Crime", "Thriller"],
   },
   {
-    id: "49",
+    id: "44",
     title: "Game of Thrones",
     posterUrl:
-      "https://images.pexels.com/photos/8111148/pexels-photo-8111148.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
     category: "TV",
     rating: 7.8,
     review:
@@ -595,10 +535,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Adventure", "Drama"],
   },
   {
-    id: "50",
+    id: "45",
     title: "Friends",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/friends.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F2koX1xLkpTQM4IZebYvKysFW1Nh.jpg",
     category: "TV",
     rating: 8.9,
     review:
@@ -607,202 +547,22 @@ export const mockContent: Content[] = [
     genre: ["Comedy", "Romance"],
   },
   {
-    id: "51",
-    title: "Stranger Things",
+    id: "64",
+    title: "Peaky Blinders",
     posterUrl:
-      "https://images.pexels.com/photos/8111021/pexels-photo-8111021.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FvUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg",
     category: "TV",
-    rating: 8.4,
+    rating: 8.8,
     review:
-      "Nostalgic 80s vibes with great characters. The supernatural elements are well executed and engaging.",
-    isFavorite: false,
-    genre: ["Drama", "Fantasy", "Horror"],
-  },
-  {
-    id: "52",
-    title: "Better Call Saul",
-    posterUrl:
-      "https://images.pexels.com/photos/7991456/pexels-photo-7991456.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 9.3,
-    review:
-      "Brilliant prequel to Breaking Bad. Bob Odenkirk delivers an outstanding performance throughout.",
+      "Stylish period crime drama. Cillian Murphy's Tommy Shelby is a complex and captivating character.",
     isFavorite: false,
     genre: ["Crime", "Drama"],
   },
   {
-    id: "53",
-    title: "Narcos",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/narcos.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.8,
-    review:
-      "Gripping crime drama about the Colombian drug cartels. Wagner Moura's Pablo Escobar is mesmerizing.",
-    isFavorite: false,
-    genre: ["Crime", "Drama", "Thriller"],
-  },
-  {
-    id: "54",
-    title: "Vikings",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/vikings.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.5,
-    review:
-      "Epic historical drama about Norse raiders. Travis Fimmel's Ragnar Lothbrok is captivating.",
-    isFavorite: false,
-    genre: ["Action", "Adventure", "History"],
-  },
-  {
-    id: "55",
-    title: "The Boys",
-    posterUrl:
-      "https://images.pexels.com/photos/7991228/pexels-photo-7991228.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.7,
-    review:
-      "Dark and gritty take on superheroes. Fantastic performances and social commentary that hits hard.",
-    isFavorite: false,
-    genre: ["Action", "Comedy", "Crime"],
-  },
-  {
-    id: "56",
-    title: "Dexter",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/dexter.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.6,
-    review:
-      "Fascinating psychological thriller about a serial killer with a code. Michael C. Hall is phenomenal.",
-    isFavorite: false,
-    genre: ["Crime", "Drama", "Mystery"],
-  },
-  {
-    id: "57",
-    title: "The Walking Dead",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/walking-dead.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.1,
-    review:
-      "Zombie apocalypse drama with strong character development. Early seasons are particularly compelling.",
-    isFavorite: false,
-    genre: ["Drama", "Horror", "Thriller"],
-  },
-  {
-    id: "58",
-    title: "Suits",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/suits.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.4,
-    review:
-      "Legal drama with sharp writing and great chemistry between the leads. Harvey and Mike's dynamic is perfect.",
-    isFavorite: false,
-    genre: ["Drama", "Legal"],
-  },
-  {
-    id: "59",
-    title: "Arcane",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/arcane.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 9.0,
-    review:
-      "Stunning animation with mature storytelling. Even non-gamers will appreciate this masterpiece.",
-    isFavorite: false,
-    genre: ["Animation", "Action", "Drama"],
-  },
-  {
-    id: "60",
-    title: "The Diplomat",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/diplomat.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.0,
-    review:
-      "Political thriller with excellent performances. Keri Russell shines as a diplomat navigating international crises.",
-    isFavorite: false,
-    genre: ["Drama", "Political", "Thriller"],
-  },
-  {
-    id: "61",
-    title: "How I Met Your Mother",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/himym.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.3,
-    review:
-      "Clever sitcom with unique storytelling structure. Neil Patrick Harris steals every scene as Barney.",
-    isFavorite: false,
-    genre: ["Comedy", "Romance"],
-  },
-  {
     id: "62",
-    title: "Mr. Robot",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/mr-robot.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.5,
-    review:
-      "Mind-bending cyberthriller with unreliable narrator. Rami Malek's performance is haunting and brilliant.",
-    isFavorite: false,
-    genre: ["Drama", "Thriller", "Crime"],
-  },
-  {
-    id: "63",
-    title: "Daredevil",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/daredevil.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.6,
-    review:
-      "Best Marvel TV series with gritty realism. Charlie Cox perfectly embodies the Man Without Fear.",
-    isFavorite: false,
-    genre: ["Action", "Crime", "Drama"],
-  },
-  {
-    id: "64",
-    title: "Prison Break",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/prison-break.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.3,
-    review:
-      "Intense thriller about elaborate prison escape. The first season is pure television gold.",
-    isFavorite: false,
-    genre: ["Action", "Crime", "Drama"],
-  },
-  {
-    id: "65",
-    title: "The Big Bang Theory",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/big-bang-theory.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.1,
-    review:
-      "Geek culture sitcom with heart. The friendship dynamics and scientific humor are endearing.",
-    isFavorite: false,
-    genre: ["Comedy"],
-  },
-  {
-    id: "66",
-    title: "The Office",
-    posterUrl:
-      "https://images.pexels.com/photos/7991647/pexels-photo-7991647.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.8,
-    review:
-      "Perfect comedy series. The character dynamics and humor never get old. Comfort watch at its finest.",
-    isFavorite: false,
-    genre: ["Comedy"],
-  },
-  {
-    id: "67",
     title: "Money Heist",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/money-heist.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfYkyF19UJdpSCMRwcQyoryBlnU3.jpg",
     category: "TV",
     rating: 8.2,
     review:
@@ -811,10 +571,202 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Drama", "Thriller"],
   },
   {
-    id: "68",
+    id: "46",
+    title: "Stranger Things",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FuOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
+    category: "TV",
+    rating: 8.4,
+    review:
+      "Nostalgic 80s vibes with great characters. The supernatural elements are well executed and engaging.",
+    isFavorite: false,
+    genre: ["Drama", "Fantasy", "Horror"],
+  },
+  {
+    id: "61",
+    title: "The Office",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7DJKHzAi83BmQrWLrYYOqcoKfhR.jpg",
+    category: "TV",
+    rating: 8.8,
+    review:
+      "Perfect comedy series. The character dynamics and humor never get old. Comfort watch at its finest.",
+    isFavorite: false,
+    genre: ["Comedy"],
+  },
+  {
+    id: "47",
+    title: "Better Call Saul",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fzjg4jpK1Wp2kiRvtt5ND0kznako.jpg",
+    category: "TV",
+    rating: 9.3,
+    review:
+      "Brilliant prequel to Breaking Bad. Bob Odenkirk delivers an outstanding performance throughout.",
+    isFavorite: false,
+    genre: ["Crime", "Drama"],
+  },
+  {
+    id: "48",
+    title: "Narcos",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrTmal9fDbwh5F0waol2hq35U4ah.jpg",
+    category: "TV",
+    rating: 8.8,
+    review:
+      "Gripping crime drama about the Colombian drug cartels. Wagner Moura's Pablo Escobar is mesmerizing.",
+    isFavorite: false,
+    genre: ["Crime", "Drama", "Thriller"],
+  },
+  {
+    id: "49",
+    title: "Vikings",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FbQLrHIRNEkE3PdIWQrZHynQZazu.jpg",
+    category: "TV",
+    rating: 8.5,
+    review:
+      "Epic historical drama about Norse raiders. Travis Fimmel's Ragnar Lothbrok is captivating.",
+    isFavorite: false,
+    genre: ["Action", "Adventure", "History"],
+  },
+  {
+    id: "50",
+    title: "The Boys",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F2zmTngn1tYC1AvfnrFLhxeD82hz.jpg",
+    category: "TV",
+    rating: 8.7,
+    review:
+      "Dark and gritty take on superheroes. Fantastic performances and social commentary that hits hard.",
+    isFavorite: false,
+    genre: ["Action", "Comedy", "Crime"],
+  },
+  {
+    id: "51",
+    title: "Dexter",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fq8dWfc4JwQuv3HayIZeO84jAXED.jpg",
+    category: "TV",
+    rating: 8.6,
+    review:
+      "Fascinating psychological thriller about a serial killer with a code. Michael C. Hall is phenomenal.",
+    isFavorite: false,
+    genre: ["Crime", "Drama", "Mystery"],
+  },
+  {
+    id: "52",
+    title: "The Walking Dead",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fng3cMtxYKt1OSQYqFlnKWnVsqNO.jpg",
+    category: "TV",
+    rating: 8.1,
+    review:
+      "Zombie apocalypse drama with strong character development. Early seasons are particularly compelling.",
+    isFavorite: false,
+    genre: ["Drama", "Horror", "Thriller"],
+  },
+  {
+    id: "53",
+    title: "Suits",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FvQiryp6LioFxQThywxbC6TuoDjy.jpg",
+    category: "TV",
+    rating: 8.4,
+    review:
+      "Legal drama with sharp writing and great chemistry between the leads. Harvey and Mike's dynamic is perfect.",
+    isFavorite: false,
+    genre: ["Drama", "Legal"],
+  },
+  {
+    id: "54",
+    title: "Arcane",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Ffqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+    category: "TV",
+    rating: 9.0,
+    review:
+      "Stunning animation with mature storytelling. Even non-gamers will appreciate this masterpiece.",
+    isFavorite: false,
+    genre: ["Animation", "Action", "Drama"],
+  },
+  {
+    id: "55",
+    title: "The Diplomat",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfZbtk0v5VIlcOyEKqYV2aMcVHSB.jpg",
+    category: "TV",
+    rating: 8.0,
+    review:
+      "Political thriller with excellent performances. Keri Russell shines as a diplomat navigating international crises.",
+    isFavorite: false,
+    genre: ["Drama", "Political", "Thriller"],
+  },
+  {
+    id: "56",
+    title: "How I Met Your Mother",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fb34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
+    category: "TV",
+    rating: 8.3,
+    review:
+      "Clever sitcom with unique storytelling structure. Neil Patrick Harris steals every scene as Barney.",
+    isFavorite: false,
+    genre: ["Comedy", "Romance"],
+  },
+  {
+    id: "57",
+    title: "Mr. Robot",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fkv1nRqgebSsREnd7vdC2pSGjpLo.jpg",
+    category: "TV",
+    rating: 8.5,
+    review:
+      "Mind-bending cyberthriller with unreliable narrator. Rami Malek's performance is haunting and brilliant.",
+    isFavorite: false,
+    genre: ["Drama", "Thriller", "Crime"],
+  },
+  {
+    id: "58",
+    title: "Daredevil",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FQWbPaDxiB6LW2LjASknzYBvjMj.jpg",
+    category: "TV",
+    rating: 8.6,
+    review:
+      "Best Marvel TV series with gritty realism. Charlie Cox perfectly embodies the Man Without Fear.",
+    isFavorite: false,
+    genre: ["Action", "Crime", "Drama"],
+  },
+  {
+    id: "59",
+    title: "Prison Break",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F5E1BhkCgjLBlqx557Z5yzcN0i88.jpg",
+    category: "TV",
+    rating: 8.3,
+    review:
+      "Intense thriller about elaborate prison escape. The first season is pure television gold.",
+    isFavorite: false,
+    genre: ["Action", "Crime", "Drama"],
+  },
+  {
+    id: "60",
+    title: "The Big Bang Theory",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FooBGRQBdbGzBxAVfExiO8r7kloA.jpg",
+    category: "TV",
+    rating: 8.1,
+    review:
+      "Geek culture sitcom with heart. The friendship dynamics and scientific humor are endearing.",
+    isFavorite: false,
+    genre: ["Comedy"],
+  },
+  {
+    id: "63",
     title: "Sherlock",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/sherlock.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcIfGAkpvWD2zxHrXzhv3uptYbyV.jpg",
     category: "TV",
     rating: 9.1,
     review:
@@ -823,24 +775,10 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Drama", "Mystery"],
   },
   {
-    id: "69",
-    title: "Peaky Blinders",
-    posterUrl:
-      "https://images.pexels.com/photos/placeholder/peaky-blinders.jpeg?auto=compress&cs=tinysrgb&w=400",
-    category: "TV",
-    rating: 8.8,
-    review:
-      "Stylish period crime drama. Cillian Murphy's Tommy Shelby is a complex and captivating character.",
-    isFavorite: false,
-    genre: ["Crime", "Drama"],
-  },
-
-  // Web Series
-  {
-    id: "70",
+    id: "65",
     title: "The Last of Us",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/last-of-us.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fdmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
     category: "Web Series",
     rating: 8.7,
     review:
@@ -849,10 +787,10 @@ export const mockContent: Content[] = [
     genre: ["Drama", "Horror", "Thriller"],
   },
   {
-    id: "71",
+    id: "66",
     title: "Daredevil",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/daredevil-web.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FQWbPaDxiB6LW2LjASknzYBvjMj.jpg",
     category: "Web Series",
     rating: 8.6,
     review:
@@ -861,10 +799,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Crime", "Drama"],
   },
   {
-    id: "72",
+    id: "67",
     title: "You",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/you.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FoANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
     category: "Web Series",
     rating: 7.7,
     review:
@@ -873,10 +811,10 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Drama", "Romance"],
   },
   {
-    id: "73",
+    id: "68",
     title: "Lucifer",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/lucifer.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FekZobS8isE6mA53RAiGDG93hBxL.jpg",
     category: "Web Series",
     rating: 8.1,
     review:
@@ -885,10 +823,10 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Drama", "Fantasy"],
   },
   {
-    id: "74",
+    id: "69",
     title: "Squid Game",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/squid-game.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F1QdXdRYfktUSONkl1oD5gc6Be0s.jpg",
     category: "Web Series",
     rating: 8.0,
     review:
@@ -897,10 +835,10 @@ export const mockContent: Content[] = [
     genre: ["Drama", "Thriller", "Action"],
   },
   {
-    id: "75",
+    id: "70",
     title: "Only Murders in the Building",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/only-murders.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FbZubW4eLAk2zqk44fSWRDTFfcba.jpg",
     category: "Web Series",
     rating: 8.0,
     review:
@@ -909,10 +847,10 @@ export const mockContent: Content[] = [
     genre: ["Comedy", "Crime", "Mystery"],
   },
   {
-    id: "76",
+    id: "71",
     title: "The Terminal List",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/terminal-list.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcgnLLrjlIJlkLQFiHkyuK3lYalz.jpg",
     category: "Web Series",
     rating: 7.9,
     review:
@@ -921,10 +859,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Drama", "Thriller"],
   },
   {
-    id: "77",
+    id: "72",
     title: "The Gentlemen",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/gentlemen.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Ftw3tzfXaSpmUZIB8ZNqNEGzMBCy.jpg",
     category: "Web Series",
     rating: 8.2,
     review:
@@ -933,10 +871,10 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Comedy", "Action"],
   },
   {
-    id: "78",
+    id: "73",
     title: "Fallout",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/fallout.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FAnsSKR9LuK0T9bAOcPVA3PUvyWj.jpg",
     category: "Web Series",
     rating: 8.4,
     review:
@@ -945,10 +883,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Drama", "Sci-Fi"],
   },
   {
-    id: "79",
+    id: "74",
     title: "The Recruit",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/recruit.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fgracenote%2F4b22e0cfac4538c8f33b7a9887864541.jpg",
     category: "Web Series",
     rating: 7.5,
     review:
@@ -957,10 +895,10 @@ export const mockContent: Content[] = [
     genre: ["Drama", "Legal", "Thriller"],
   },
   {
-    id: "80",
+    id: "75",
     title: "Lupin",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/lupin.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FsOUWRai0215iUSMackrZx3Y1j05.jpg",
     category: "Web Series",
     rating: 7.5,
     review:
@@ -969,10 +907,10 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Drama", "Mystery"],
   },
   {
-    id: "81",
+    id: "76",
     title: "Reacher",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/reacher.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F31GlRQMiDunO8cl3NxTz34U64rf.jpg",
     category: "Web Series",
     rating: 8.1,
     review:
@@ -981,10 +919,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Crime", "Drama"],
   },
   {
-    id: "82",
+    id: "77",
     title: "Person of Interest",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/person-of-interest.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F6FuKOyJgViZXgMDOq9djFJLWPqX.jpg",
     category: "Web Series",
     rating: 8.4,
     review:
@@ -993,10 +931,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Crime", "Drama"],
   },
   {
-    id: "83",
+    id: "78",
     title: "Tom Clancy's Jack Ryan",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/jack-ryan.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F8TIEbGYzDRxBQrb7z4cL7AWkgZq.jpg",
     category: "Web Series",
     rating: 8.0,
     review:
@@ -1005,10 +943,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Drama", "Thriller"],
   },
   {
-    id: "84",
+    id: "79",
     title: "The Suicide Squad",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/suicide-squad.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F2%2Fgracenote%2F2522fe4b97b11dee728850c8a8c360b2.jpg",
     category: "Web Series",
     rating: 7.2,
     review:
@@ -1017,10 +955,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Comedy", "Adventure"],
   },
   {
-    id: "85",
+    id: "80",
     title: "Avengers",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/avengers.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fgracenote%2F8da028f7cbbeff603eb2627251ebef12.jpg",
     category: "Web Series",
     rating: 8.0,
     review:
@@ -1029,10 +967,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Adventure", "Sci-Fi"],
   },
   {
-    id: "86",
+    id: "81",
     title: "Spider-Man",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/spider-man.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F3%2Fgracenote%2F3e2e986f01d087fddd7a106420885c90.jpg",
     category: "Web Series",
     rating: 7.3,
     review:
@@ -1041,10 +979,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Adventure", "Sci-Fi"],
   },
   {
-    id: "87",
+    id: "82",
     title: "Sweet Tooth",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/sweet-tooth.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrgMfhcrVZjuy5b7Pn0KzCRCEnMX.jpg",
     category: "Web Series",
     rating: 7.8,
     review:
@@ -1053,10 +991,34 @@ export const mockContent: Content[] = [
     genre: ["Adventure", "Drama", "Fantasy"],
   },
   {
-    id: "88",
+    id: "84",
+    title: "Outer Banks",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FovDgO2LPfwdVRfvScAqo9aMiIW.jpg",
+    category: "Web Series",
+    rating: 0,
+    review:
+      "On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a legendary treasure linked to his father's disappearance.",
+    isFavorite: false,
+    genre: ["Drama", "Mystery", "Action", "Crime", "Romance", "Thriller"],
+  },
+  {
+    id: "85",
+    title: "Dom",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fsd7gQpzRMM6WMj2n6RJLsSZGFRP.jpg",
+    category: "Web Series",
+    rating: 0,
+    review:
+      "A father who never stopped fighting against drugs. A son who never stopped using them. Two sides of the same coin. Victor is a cop who has fought all his life to curb cocaine trafficking. His son is a drug addict who has become one of the most wanted burglars in Rio de Janeiro. Will a father's love be enough to save his son's life?",
+    isFavorite: false,
+    genre: ["Crime", "Drama"],
+  },
+  {
+    id: "86",
     title: "Sex Education",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/sex-education.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F8TIEbGYzDRxBQrb7z4cL7AWkgZq.jpg",
     category: "Web Series",
     rating: 8.3,
     review:
@@ -1065,10 +1027,10 @@ export const mockContent: Content[] = [
     genre: ["Comedy", "Drama"],
   },
   {
-    id: "89",
+    id: "87",
     title: "Wednesday",
     posterUrl:
-      "https://images.pexels.com/photos/8110989/pexels-photo-8110989.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
     category: "Web Series",
     rating: 7.5,
     review:
@@ -1077,10 +1039,10 @@ export const mockContent: Content[] = [
     genre: ["Comedy", "Crime", "Family"],
   },
   {
-    id: "90",
+    id: "88",
     title: "Bridgerton",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/bridgerton.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdMARTbYFPmoxPqNySiRrhl53vau.jpg",
     category: "Web Series",
     rating: 7.3,
     review:
@@ -1089,10 +1051,10 @@ export const mockContent: Content[] = [
     genre: ["Drama", "Romance"],
   },
   {
-    id: "91",
+    id: "89",
     title: "The Family Man",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/family-man.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F5l5uL40hrP3oKzD6zfh2F9b6XMd.jpg",
     category: "Web Series",
     rating: 8.7,
     review:
@@ -1101,10 +1063,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Drama", "Thriller"],
   },
   {
-    id: "92",
+    id: "90",
     title: "Mirzapur",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/mirzapur.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fp0qM8hhlMF5DuxHBzl2EZR6TehX.jpg",
     category: "Web Series",
     rating: 8.4,
     review:
@@ -1113,10 +1075,10 @@ export const mockContent: Content[] = [
     genre: ["Action", "Crime", "Drama"],
   },
   {
-    id: "93",
+    id: "91",
     title: "Delhi Crime",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/delhi-crime.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FxkpkTj6KGsjSaet0VQaq0aTn31D.jpg",
     category: "Web Series",
     rating: 8.5,
     review:
@@ -1125,10 +1087,10 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Drama", "Thriller"],
   },
   {
-    id: "94",
+    id: "92",
     title: "Asur",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/asur.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FnjUrr755WzIrNfuUwQhpu2ljjH4.jpg",
     category: "Web Series",
     rating: 8.4,
     review:
@@ -1137,10 +1099,10 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Drama", "Thriller"],
   },
   {
-    id: "95",
+    id: "93",
     title: "Farzi",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/farzi.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fdx4xuirkO8dU59RVxgOlLZV5MaR.jpg",
     category: "Web Series",
     rating: 8.1,
     review:
@@ -1149,10 +1111,10 @@ export const mockContent: Content[] = [
     genre: ["Crime", "Drama", "Thriller"],
   },
   {
-    id: "96",
+    id: "94",
     title: "The Night Manager",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/night-manager.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F1anVoLwguecmFqsNx0Ic8cIzmuW.jpg",
     category: "Web Series",
     rating: 8.0,
     review:
@@ -1161,10 +1123,10 @@ export const mockContent: Content[] = [
     genre: ["Drama", "Thriller", "Crime"],
   },
   {
-    id: "97",
+    id: "95",
     title: "Aashram",
     posterUrl:
-      "https://images.pexels.com/photos/placeholder/aashram.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F5tK4hBaHXqEcz1iHRr0nCgaABPk.jpg",
     category: "Web Series",
     rating: 7.9,
     review:
