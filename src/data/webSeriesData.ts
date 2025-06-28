@@ -60,7 +60,7 @@ export const webSeriesData: Omit<Content, "id">[] = [
     title: "The Boys",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F2zmTngn1tYC1AvfnrFLhxeD82hz.jpg",
-    category: "TV",
+    category: "Web Series",
     rating: 8.7,
     review:
       "Dark and gritty take on superheroes. Fantastic performances and social commentary that hits hard.",
@@ -89,6 +89,29 @@ export const webSeriesData: Omit<Content, "id">[] = [
       "Jenna Ortega nails Wednesday Addams. Good mystery plot with great cinematography and costume design.",
     isFavorite: false,
     genre: ["Comedy", "Crime", "Family"],
+  },
+
+  {
+    title: "Dexter",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fq8dWfc4JwQuv3HayIZeO84jAXED.jpg",
+    category: "Web Series",
+    rating: 8.6,
+    review:
+      "Fascinating psychological thriller about a serial killer with a code. Michael C. Hall is phenomenal.",
+    isFavorite: false,
+    genre: ["Crime", "Drama", "Mystery"],
+  },
+  {
+    title: "Prison Break",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F5E1BhkCgjLBlqx557Z5yzcN0i88.jpg",
+    category: "Web Series",
+    rating: 8.3,
+    review:
+      "Intense thriller about elaborate prison escape. The first season is pure television gold.",
+    isFavorite: false,
+    genre: ["Action", "Crime", "Drama"],
   },
   {
     title: "Only Murders in the Building",
@@ -146,17 +169,6 @@ export const webSeriesData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Drama", "Legal", "Thriller"],
   },
-  {
-    title: "Lupin",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FsOUWRai0215iUSMackrZx3Y1j05.jpg",
-    category: "Web Series",
-    rating: 7.5,
-    review:
-      "French heist series with style and charm. Omar Sy brings charisma to the modern gentleman thief.",
-    isFavorite: false,
-    genre: ["Crime", "Drama", "Mystery"],
-  },
 
   {
     title: "Tom Clancy's Jack Ryan",
@@ -169,6 +181,19 @@ export const webSeriesData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Action", "Drama", "Thriller"],
   },
+
+  {
+    title: "Narcos",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrTmal9fDbwh5F0waol2hq35U4ah.jpg",
+    category: "Web Series",
+    rating: 8.8,
+    review:
+      "Gripping crime drama about the Colombian drug cartels. Wagner Moura's Pablo Escobar is mesmerizing.",
+    isFavorite: false,
+    genre: ["Crime", "Drama", "Thriller"],
+  },
+
   {
     title: "The Suicide Squad",
     posterUrl:
@@ -206,21 +231,10 @@ export const webSeriesData: Omit<Content, "id">[] = [
     title: "Better Call Saul",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fzjg4jpK1Wp2kiRvtt5ND0kznako.jpg",
-    category: "TV",
+    category: "Web Series",
     rating: 9.3,
     review:
       "Brilliant prequel to Breaking Bad. Bob Odenkirk delivers an outstanding performance throughout.",
-    isFavorite: false,
-    genre: ["Crime", "Drama"],
-  },
-  {
-    title: "Dom",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fsd7gQpzRMM6WMj2n6RJLsSZGFRP.jpg",
-    category: "Web Series",
-    rating: 0,
-    review:
-      "A father who never stopped fighting against drugs. A son who never stopped using them. Two sides of the same coin. Victor is a cop who has fought all his life to curb cocaine trafficking. His son is a drug addict who has become one of the most wanted burglars in Rio de Janeiro. Will a father's love be enough to save his son's life?",
     isFavorite: false,
     genre: ["Crime", "Drama"],
   },
@@ -262,7 +276,7 @@ export const webSeriesData: Omit<Content, "id">[] = [
   {
     title: "Bridgerton",
     posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdMARTbYFPmoxPqNySiRrhl53vau.jpg",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FqaewZKBKmXjb4ZfFBb1LCug6BE8.jpg",
     category: "Web Series",
     rating: 7.3,
     review:

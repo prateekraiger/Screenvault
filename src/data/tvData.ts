@@ -80,21 +80,21 @@ export const tvData: Omit<Content, "id">[] = [
   },
 
   {
-    title: "Narcos",
+    title: "Avengers",
     posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrTmal9fDbwh5F0waol2hq35U4ah.jpg",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fgracenote%2F8da028f7cbbeff603eb2627251ebef12.jpg",
     category: "TV",
-    rating: 8.8,
+    rating: 8.0,
     review:
-      "Gripping crime drama about the Colombian drug cartels. Wagner Moura's Pablo Escobar is mesmerizing.",
+      "Epic superhero ensemble that changed cinema. The culmination of the MCU's first phase.",
     isFavorite: false,
-    genre: ["Crime", "Drama", "Thriller"],
+    genre: ["Action", "Adventure", "Sci-Fi"],
   },
   {
     title: "Person of Interest",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F6FuKOyJgViZXgMDOq9djFJLWPqX.jpg",
-    category: "Web Series",
+    category: "TV",
     rating: 8.4,
     review:
       "Brilliant AI thriller disguised as a procedural. The evolution from case-of-the-week to serialized storytelling is masterful.",
@@ -113,17 +113,6 @@ export const tvData: Omit<Content, "id">[] = [
     genre: ["Action", "Adventure", "History"],
   },
 
-  {
-    title: "Dexter",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fq8dWfc4JwQuv3HayIZeO84jAXED.jpg",
-    category: "TV",
-    rating: 8.6,
-    review:
-      "Fascinating psychological thriller about a serial killer with a code. Michael C. Hall is phenomenal.",
-    isFavorite: false,
-    genre: ["Crime", "Drama", "Mystery"],
-  },
   {
     title: "Harry Potter",
     posterUrl:
@@ -191,17 +180,6 @@ export const tvData: Omit<Content, "id">[] = [
     genre: ["Animation", "Action", "Drama"],
   },
   {
-    title: "The Diplomat",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfZbtk0v5VIlcOyEKqYV2aMcVHSB.jpg",
-    category: "TV",
-    rating: 8.0,
-    review:
-      "Political thriller with excellent performances. Keri Russell shines as a diplomat navigating international crises.",
-    isFavorite: false,
-    genre: ["Drama", "Political", "Thriller"],
-  },
-  {
     title: "How I Met Your Mother",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fb34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
@@ -223,28 +201,7 @@ export const tvData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Drama", "Thriller", "Crime"],
   },
-  {
-    title: "Daredevil",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FQWbPaDxiB6LW2LjASknzYBvjMj.jpg",
-    category: "TV",
-    rating: 8.6,
-    review:
-      "Best Marvel TV series with gritty realism. Charlie Cox perfectly embodies the Man Without Fear.",
-    isFavorite: false,
-    genre: ["Action", "Crime", "Drama"],
-  },
-  {
-    title: "Prison Break",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F5E1BhkCgjLBlqx557Z5yzcN0i88.jpg",
-    category: "TV",
-    rating: 8.3,
-    review:
-      "Intense thriller about elaborate prison escape. The first season is pure television gold.",
-    isFavorite: false,
-    genre: ["Action", "Crime", "Drama"],
-  },
+
   {
     title: "The Big Bang Theory",
     posterUrl:
@@ -267,17 +224,7 @@ export const tvData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Crime", "Drama", "Mystery"],
   },
-  {
-    title: "Avengers",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fgracenote%2F8da028f7cbbeff603eb2627251ebef12.jpg",
-    category: "TV",
-    rating: 8.0,
-    review:
-      "Epic superhero ensemble that changed cinema. The culmination of the MCU's first phase.",
-    isFavorite: false,
-    genre: ["Action", "Adventure", "Sci-Fi"],
-  },
+
   {
     title: "Spider-Man",
     posterUrl:
