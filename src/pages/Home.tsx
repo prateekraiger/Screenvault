@@ -42,11 +42,11 @@ const categoryDescriptions: Record<string, string> = {
 export default function Home() {
   const navigate = useNavigate();
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-transparent w-full overflow-x-hidden">
-      <div className="text-center mb-8 mt-12 w-full max-w-screen px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 mx-auto">
-        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold leading-tight mb-4 break-words max-w-full mx-auto text-balance text-wrap">
-          <FlipText className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-500 drop-shadow-lg text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl break-words max-w-full w-full block">
-            Welcome to ScreenVault
+    <div className="min-h-screen flex flex-col items-center justify-center bg-transparent w-full overflow-x-hidden box-border">
+      <div className="text-center mb-8 mt-12 w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 mx-auto overflow-x-hidden">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-4 break-words max-w-full mx-auto text-balance text-wrap drop-shadow-2xl whitespace-pre-line">
+          <FlipText className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-500 drop-shadow-lg text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-black whitespace-pre-line">
+            {`Welcome to\nScreenVault`}
           </FlipText>
         </h1>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed text-cyan-100/80 px-1 break-words text-wrap">
@@ -56,7 +56,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="flex justify-center w-full px-2 sm:px-4 lg:px-8 xl:px-12 2xl:px-16 min-w-0">
+      <div className="flex justify-center w-full px-2 sm:px-4 lg:px-8 xl:px-10 2xl:px-12 min-w-0 overflow-x-hidden">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 w-full max-w-6xl min-w-0 overflow-x-hidden">
           {routes.map((route) => (
             <button
@@ -83,7 +83,7 @@ export default function Home() {
       </div>
 
       {/* Hall of Fame Section */}
-      <div className="w-full flex flex-col items-center my-8 sm:my-14 md:my-20 px-2 sm:px-4 lg:px-8 xl:px-12 2xl:px-16 min-w-0">
+      <div className="w-full flex flex-col items-center my-8 sm:my-14 md:my-20 px-2 sm:px-4 lg:px-8 xl:px-10 2xl:px-12 min-w-0 overflow-x-hidden">
         <div className="w-full bg-gray-900 dark:bg-gray-950 rounded-3xl shadow-2xl border-2 border-gray-800 p-4 sm:p-8 md:p-10 flex flex-col items-center min-h-[10rem] sm:min-h-[16rem] md:min-h-[20rem]">
           <h2 className="text-xl sm:text-4xl md:text-6xl font-extrabold mb-2 sm:mb-8 text-center text-white drop-shadow-lg tracking-tight break-words text-wrap max-w-xs sm:max-w-2xl mx-auto">
             Hall of Fame
