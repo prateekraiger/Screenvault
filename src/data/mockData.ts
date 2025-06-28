@@ -1008,7 +1008,7 @@ export const mockContent: Content[] = [
     title: "Avengers",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fgracenote%2F8da028f7cbbeff603eb2627251ebef12.jpg",
-    category: "Web Series",
+    category: "TV",
     rating: 8.0,
     review:
       "Epic superhero ensemble that changed cinema. The culmination of the MCU's first phase.",
@@ -1020,7 +1020,7 @@ export const mockContent: Content[] = [
     title: "Spider-Man",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F3%2Fgracenote%2F3e2e986f01d087fddd7a106420885c90.jpg",
-    category: "Web Series",
+    category: "TV",
     rating: 7.3,
     review:
       "Web-slinging action with great character development. The friendly neighborhood hero done right.",
