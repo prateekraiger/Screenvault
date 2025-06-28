@@ -35,9 +35,8 @@ function MainApp() {
       {/* Hide all content while loading, then fade in with BlurFade */}
       <BlurFade duration={0.7} delay={0.1}>
         <div className={loading ? "invisible" : "visible"}>
-          <Navbar searchTerm="" onSearchChange={() => {}} />
-          <main className="pt-20 pb-8">
-            <div className="w-full px-4 sm:px-6 lg:px-8 min-h-[60vh]">
+          <main className="flex-1 pt-20 pb-0 flex flex-col">
+            <div className="w-full px-4 sm:px-6 lg:px-8 min-h-[60vh] flex-1">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/tv" element={<TVPage />} />
@@ -48,7 +47,6 @@ function MainApp() {
               </Routes>
             </div>
           </main>
-          <Footer />
         </div>
       </BlurFade>
     </div>
@@ -58,11 +56,15 @@ function MainApp() {
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="relative min-h-screen flex flex-col">
-        <div className="flex-1">
-          <MainApp />
+      <>
+        <Navbar />
+        <div className="relative min-h-screen flex flex-col">
+          <div className="flex-1">
+            <MainApp />
+          </div>
         </div>
-      </div>
+        <Footer />
+      </>
     </BrowserRouter>
   );
 }

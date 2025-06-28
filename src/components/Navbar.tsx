@@ -3,6 +3,7 @@ import { Search as SearchIcon, Menu, X } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaPlayCircle } from "react-icons/fa";
+import { Logo } from "./Logo";
 
 const navigationLinks = [
   { to: "/", label: "Home" },
@@ -12,41 +13,22 @@ const navigationLinks = [
   { to: "/web-series", label: "Web Series" },
 ];
 
-export default function Navbar({
-  searchTerm = "",
-  onSearchChange = () => {},
-}: {
-  searchTerm?: string;
-  onSearchChange?: (term: string) => void;
-}) {
+export default function Navbar() {
   const id = useId();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchFocused, setSearchFocused] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#23272F]/90 backdrop-blur-xl border-b border-cyan-900/40 shadow-2xl w-full">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#23272F]/90 backdrop-blur-xl border-b border-cyan-900/40 shadow-2xl w-full m-0 p-0">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo Section */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-teal-400 rounded-xl blur opacity-60 group-hover:opacity-90 transition duration-300"></div>
-              <div className="relative bg-gradient-to-r from-cyan-600 to-teal-600 p-2 rounded-xl shadow-lg">
-                <FaPlayCircle className="w-7 h-7 text-cyan-400 drop-shadow" />
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-black text-2xl bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-400 bg-clip-text text-transparent tracking-tight group-hover:brightness-125 transition duration-300">
-                ScreenVault
-              </span>
-              <span className="text-xs text-cyan-300 font-medium -mt-1 opacity-80">
-                Stream Everything
-              </span>
-            </div>
+            <Logo size={36} textSize="text-2xl" />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8 ml-auto">
             {navigationLinks.map((link, index) => (
               <Link
                 key={index}
@@ -58,45 +40,6 @@ export default function Navbar({
               </Link>
             ))}
           </nav>
-
-          {/* Search Bar (hidden on mobile) */}
-          <div className="hidden md:flex flex-1 max-w-md mx-8">
-            <div
-              className={`relative w-full transition-all duration-300 ${
-                searchFocused ? "transform scale-105" : ""
-              }`}
-            >
-              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <SearchIcon
-                  className={`h-5 w-5 transition-colors duration-300 ${
-                    searchFocused ? "text-cyan-400" : "text-cyan-300"
-                  }`}
-                />
-              </div>
-              <input
-                id={id}
-                type="text"
-                placeholder="Search movies, shows, anime..."
-                value={searchTerm}
-                onChange={(e) => onSearchChange(e.target.value)}
-                onFocus={() => setSearchFocused(true)}
-                onBlur={() => setSearchFocused(false)}
-                className={`w-full pl-12 pr-4 py-3 bg-[#23272F]/80 border rounded-xl text-cyan-100 placeholder-cyan-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-500/50 hover:bg-[#164E63]/40 ${
-                  searchFocused
-                    ? "border-cyan-500/50 shadow-lg shadow-cyan-500/20"
-                    : "border-cyan-900/40"
-                }`}
-              />
-              {searchTerm && (
-                <button
-                  onClick={() => onSearchChange("")}
-                  className="absolute inset-y-0 right-0 pr-4 flex items-center text-cyan-300 hover:text-cyan-400 transition-colors duration-200"
-                >
-                  <X className="h-4 w-4" />
-                </button>
-              )}
-            </div>
-          </div>
 
           {/* Mobile Menu Button */}
           <button

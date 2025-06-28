@@ -114,6 +114,29 @@ export const webSeriesData: Omit<Content, "id">[] = [
     genre: ["Action", "Crime", "Drama"],
   },
   {
+    title: "Lupin",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FsOUWRai0215iUSMackrZx3Y1j05.jpg",
+    category: "Web Series",
+    rating: 7.5,
+    review:
+      "French heist series with style and charm. Omar Sy brings charisma to the modern gentleman thief.",
+    isFavorite: false,
+    genre: ["Crime", "Drama", "Mystery"],
+  },
+
+  {
+    title: "Dom",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fsd7gQpzRMM6WMj2n6RJLsSZGFRP.jpg",
+    category: "Web Series",
+    rating: 0,
+    review:
+      "A father who never stopped fighting against drugs. A son who never stopped using them. Two sides of the same coin. Victor is a cop who has fought all his life to curb cocaine trafficking. His son is a drug addict who has become one of the most wanted burglars in Rio de Janeiro. Will a father's love be enough to save his son's life?",
+    isFavorite: false,
+    genre: ["Crime", "Drama"],
+  },
+  {
     title: "Only Murders in the Building",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FbZubW4eLAk2zqk44fSWRDTFfcba.jpg",
