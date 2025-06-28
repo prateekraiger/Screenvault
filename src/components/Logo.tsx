@@ -1,6 +1,9 @@
 import React from "react";
 
-export const Logo = ({ size = 36, textSize = "text-2xl" }) => {
+export const Logo = ({
+  size = 36,
+  textSize = "text-2xl sm:text-3xl md:text-4xl",
+}) => {
   return (
     <div className="flex items-center gap-2 select-none">
       <div

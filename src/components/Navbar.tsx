@@ -60,8 +60,8 @@ export default function Navbar() {
             className="flex items-center space-x-2 sm:space-x-3 group min-w-0 flex-shrink-0"
           >
             <Logo
-              size={28}
-              textSize="text-base sm:text-xl max-w-[60vw] truncate overflow-hidden"
+              size={44}
+              textSize="text-3xl sm:text-4xl md:text-5xl max-w-[60vw] truncate overflow-hidden"
             />
           </Link>
 
