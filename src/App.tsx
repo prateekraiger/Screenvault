@@ -11,6 +11,7 @@ import AllContentPage from "./pages/AllContentPage";
 import Loader from "@/components/Loader";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SmoothCursor } from "./components/ui/smooth-cursor";
 
 function MainApp() {
   const [loading, setLoading] = useState(true);
@@ -57,6 +58,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <>
+        <SmoothCursor />
         <Navbar />
         <div className="relative min-h-screen flex flex-col">
           <div className="flex-1">

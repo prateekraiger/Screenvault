@@ -2,7 +2,7 @@ import { FlipText } from "@/components/magicui/flip-text";
 import { useNavigate } from "react-router-dom";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { FaTv, FaGlobe, FaFilm, FaDragon } from "react-icons/fa";
-import DraggableCardDemo from "@/components/ui/draggable-card-demo-2";
+import DraggableCardDemo from "@/components/ui/featured";
 
 const routes = [
   {
