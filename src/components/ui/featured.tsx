@@ -23,16 +23,16 @@ export default function DraggableCardDemo() {
       image:
         "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
     },
-
-    {
-      title: "You",
-      image:
-        "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FoANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
-    },
     {
       title: "One Piece",
       image:
         "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcMD9Ygz11zjJzAovURpO75Qg7rT.jpg",
+    },
+
+    {
+      title: "Attack On Titan",
+      image:
+        "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FhqRb1wyIVsaMukZElPBUXoJPqrR.jpg",
     },
     {
       title: "Detective Conan",
@@ -44,6 +44,12 @@ export default function DraggableCardDemo() {
       image:
         "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fa7i9OdTUo9jZ1XoraCRIQNJ6ACX.jpg",
     },
+
+    {
+      title: "You",
+      image:
+        "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FoANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
+    },
     {
       title: "Tenet",
       image:
@@ -53,6 +59,11 @@ export default function DraggableCardDemo() {
       title: "Avengers",
       image:
         "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fgracenote%2F8da028f7cbbeff603eb2627251ebef12.jpg",
+    },
+    {
+      title: "Loki",
+      image:
+        "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FoJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
     },
   ];
   return (
