@@ -58,4 +58,4 @@ pnpm run preview
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the [Apache License](LICENSE) file for details.
