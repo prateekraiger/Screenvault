@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
 import playCircle from "../assets/play-circle.svg";
 import pauseCircle from "../assets/pause-circle.svg";
+import SearchBar from "./SearchBar";
 
 const navigationLinks = [
   { to: "/", label: "Home" },
@@ -64,7 +65,7 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Right Section: nav links, play button, menu button */}
+          {/* Right Section: nav links, search bar, play button, menu button */}
           <div
             className="flex items-center min-w-0 ml-auto gap-2 sm:gap-4 overflow-x-hidden scrollbar-none"
             style={{ scrollbarWidth: "none" }}
@@ -86,6 +87,11 @@ export default function Navbar() {
                 </Link>
               ))}
             </nav>
+
+            {/* Search Bar */}
+            <div className="hidden md:flex items-center mx-2 w-64 max-w-xs">
+              <SearchBar />
+            </div>
 
             {/* Play Button */}
             <button
