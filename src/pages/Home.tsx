@@ -46,7 +46,7 @@ export default function Home() {
       <div className="text-center mb-8 mt-12 w-full max-w-screen px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 mx-auto">
         <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold leading-tight mb-4 break-words max-w-full mx-auto text-balance text-wrap">
           <FlipText className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-500 drop-shadow-lg text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl break-words max-w-full w-full block">
-            Welcome to Screen Vault
+            Welcome to ScreenVault
           </FlipText>
         </h1>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed text-cyan-100/80 px-1 break-words text-wrap">
