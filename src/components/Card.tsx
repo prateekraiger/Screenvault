@@ -63,10 +63,10 @@ const Card: React.FC<CardProps> = ({
           </div>
 
           {/* Bottom Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-60"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-transparent opacity-60"></div>
 
           {/* Title at Bottom (overlay) */}
-          <div className="absolute bottom-0 left-0 w-full px-5 pb-5 pt-3 bg-gradient-to-t from-black/90 via-black/60 to-transparent flex items-center justify-center">
+          <div className="absolute bottom-0 left-0 w-full px-5 pb-5 pt-3 bg-transparent flex items-center justify-center">
             <h3 className="text-xl font-bold text-white text-center w-full truncate">
               {title}
             </h3>

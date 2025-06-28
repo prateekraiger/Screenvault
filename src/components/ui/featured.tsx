@@ -67,7 +67,7 @@ export default function Featured() {
 
   return (
     <DraggableCardContainer>
-      <div className="relative flex flex-wrap justify-center items-center gap-8 min-h-[40rem] w-full overflow-clip p-8 bg-gray-900 dark:bg-gray-950 rounded-2xl">
+      <div className="relative flex flex-wrap justify-center items-center gap-8 min-h-[40rem] w-full overflow-clip p-8 rounded-2xl bg-transparent">
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto max-w-sm text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800 pointer-events-none select-none z-0">
           If it's your first day at Fight Club, you have to fight.
         </p>

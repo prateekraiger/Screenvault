@@ -23,7 +23,7 @@ const ContentCard: React.FC<ContentCardProps> = ({ content }) => {
 
   return (
     <BlurFade duration={0.9} blur="16px" offset={24}>
-      <div className="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl hover:scale-105 bg-[#23272F] border border-cyan-900/40 hover:rotate-1 transform-gpu">
+      <div className="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl hover:scale-105 bg-transparent border border-cyan-900/40 hover:rotate-1 transform-gpu">
         {/* Poster Image */}
         <div className="relative overflow-hidden">
           <img

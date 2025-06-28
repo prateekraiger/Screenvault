@@ -42,7 +42,7 @@ const categoryDescriptions: Record<string, string> = {
 export default function Home() {
   const navigate = useNavigate();
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-transparent w-full overflow-x-hidden box-border">
+    <div className="min-h-screen flex flex-col items-center justify-center w-full overflow-x-hidden box-border scrollbar-hide">
       <div className="text-center mb-8 mt-12 w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 mx-auto overflow-x-hidden">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-4 break-words max-w-full mx-auto  text-wrap drop-shadow-2xl whitespace-pre-line">
           <FlipText className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-500 drop-shadow-lg text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-black whitespace-pre-line">
@@ -64,7 +64,7 @@ export default function Home() {
               onClick={() => navigate(route.path)}
               className="w-full min-w-0"
             >
-              <BackgroundGradient className="rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center cursor-pointer transition-transform hover:scale-105 bg-[#23272F] border border-cyan-900/40 shadow-2xl group min-w-0 w-full max-w-xs mx-auto">
+              <BackgroundGradient className="rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center cursor-pointer transition-transform hover:scale-105 border border-cyan-900/40 shadow-2xl group min-w-0 w-full max-w-xs mx-auto">
                 {React.cloneElement(route.icon, {
                   className:
                     "w-7 h-7 sm:w-8 sm:h-8 mb-2 sm:mb-3 " +
@@ -84,7 +84,7 @@ export default function Home() {
 
       {/* Hall of Fame Section */}
       <div className="w-full flex flex-col items-center my-8 sm:my-14 md:my-20 px-2 sm:px-4 lg:px-8 xl:px-10 2xl:px-12 min-w-0 overflow-x-hidden">
-        <div className="w-full bg-gray-900 dark:bg-gray-950 rounded-3xl shadow-2xl border-2 border-gray-800 p-4 sm:p-8 md:p-10 flex flex-col items-center min-h-[10rem] sm:min-h-[16rem] md:min-h-[20rem]">
+        <div className="w-full rounded-3xl shadow-2xl border-2 border-gray-800 p-4 sm:p-8 md:p-10 flex flex-col items-center min-h-[10rem] sm:min-h-[16rem] md:min-h-[20rem] bg-transparent">
           <h2 className="text-xl sm:text-4xl md:text-6xl font-extrabold mb-2 sm:mb-8 text-center text-white drop-shadow-lg tracking-tight break-words text-wrap max-w-xs sm:max-w-2xl mx-auto">
             Hall of Fame
           </h2>
