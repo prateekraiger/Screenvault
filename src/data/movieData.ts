@@ -2,6 +2,17 @@ import { Content } from "../types/Content";
 
 export const movieData: Omit<Content, "id">[] = [
   {
+    title: "Dune",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fgracenote%2F8a557d3d98fe2d8969bfd17e5c21cadc.jpg",
+    category: "Movie",
+    rating: 8.1,
+    review:
+      "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
+    isFavorite: false,
+    genre: ["Science Fiction", "Action", "Drama"],
+  },
+  {
     title: "John Wick",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FtcmcJAXN2nUf1HgY1PL2H72PD6I.jpg",
@@ -235,16 +246,5 @@ export const movieData: Omit<Content, "id">[] = [
       "Touching story of an unlikely mentor-student relationship. Jean Reno and Natalie Portman are excellent.",
     isFavorite: false,
     genre: ["Action", "Crime", "Drama"],
-  },
-  {
-    title: "Dune",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fgracenote%2F8a557d3d98fe2d8969bfd17e5c21cadc.jpg",
-    category: "Movie",
-    rating: 8.1,
-    review:
-      "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
-    isFavorite: false,
-    genre: ["Science Fiction", "Action", "Drama"],
   },
 ];
