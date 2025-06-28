@@ -28,7 +28,6 @@ export default function DraggableCardDemo() {
       image:
         "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcMD9Ygz11zjJzAovURpO75Qg7rT.jpg",
     },
-
     {
       title: "Attack On Titan",
       image:
@@ -44,7 +43,6 @@ export default function DraggableCardDemo() {
       image:
         "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fa7i9OdTUo9jZ1XoraCRIQNJ6ACX.jpg",
     },
-
     {
       title: "You",
       image:
@@ -66,23 +64,24 @@ export default function DraggableCardDemo() {
         "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FoJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
     },
   ];
+
   return (
     <DraggableCardContainer>
       <div className="relative flex flex-wrap justify-center items-center gap-8 min-h-[40rem] w-full overflow-clip p-8 bg-gray-900 dark:bg-gray-950 rounded-2xl">
         <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto max-w-sm text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800 pointer-events-none select-none z-0">
-          If its your first day at Fight Club, you have to fight.
+          If it's your first day at Fight Club, you have to fight.
         </p>
         {items.map((item) => (
           <DraggableCardBody
             key={item.title}
-            className="relative z-10 h-80 w-64 bg-gray-800 dark:bg-gray-800 border border-gray-700 dark:border-gray-700 rounded-xl shadow-xl flex flex-col items-center justify-between"
+            className="relative z-10 h-80 w-64 bg-gray-800 dark:bg-gray-800 border border-gray-700 dark:border-gray-700 rounded-xl shadow-xl flex flex-col"
           >
             <img
               src={item.image}
               alt={item.title}
-              className="pointer-events-none h-60 w-full object-cover rounded-t-xl"
+              className="pointer-events-none h-9/10 w-full object-cover rounded-t-xl"
             />
-            <h3 className="mt-2 mb-2 text-center text-lg font-bold text-white drop-shadow-sm px-2">
+            <h3 className="h-1/10 mt-2 mb-2 text-center text-lg font-bold text-white drop-shadow-sm px-2">
               {item.title}
             </h3>
           </DraggableCardBody>

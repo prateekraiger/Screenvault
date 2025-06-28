@@ -17,7 +17,7 @@ export const tvData: Omit<Content, "id">[] = [
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
     category: "TV",
-    rating: 7.8,
+    rating: 8.8,
     review:
       "Started strong but the ending was disappointing. Still has some of the best television moments ever created.",
     isFavorite: true,
@@ -39,7 +39,7 @@ export const tvData: Omit<Content, "id">[] = [
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FvUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg",
     category: "TV",
-    rating: 8.8,
+    rating: 8.7,
     review:
       "Stylish period crime drama. Cillian Murphy's Tommy Shelby is a complex and captivating character.",
     isFavorite: false,
