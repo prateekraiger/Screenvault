@@ -20,7 +20,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="w-full bg-[#23272F] py-4 sm:py-6 text-cyan-100/80">
-      <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 sm:flex-row">
+      <div className="w-full flex flex-col items-center justify-between gap-4 px-0 sm:flex-row">
         <p className="text-center text-xs sm:text-sm font-light md:text-left transition-colors duration-500 ease-in-out hover:text-cyan-400">
           © {new Date().getFullYear()} ScreenVault. All rights reserved
         </p>

@@ -23,10 +23,10 @@ export const BackgroundGradient = ({
   };
   return (
     <div
-      className={cn(
+        className={cn(
         "relative p-[4px] group transition-all duration-300",
         containerClassName
-      )}
+        )}
     >
       {/* Vibrant animated gradient background */}
       <motion.div
