@@ -13,6 +13,20 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SmoothCursor } from "./components/ui/smooth-cursor";
 
+function useIsDesktop() {
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth >= 768 : true
+  );
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return isDesktop;
+}
+
 function MainApp() {
   const [loading, setLoading] = useState(true);
 
@@ -55,12 +69,13 @@ function MainApp() {
 }
 
 export default function App() {
+  const isDesktop = useIsDesktop();
   return (
     <BrowserRouter
       future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
     >
       <>
-        <SmoothCursor />
+        {isDesktop && <SmoothCursor />}
         <Navbar />
         <div className="relative min-h-screen flex flex-col">
           <div className="flex-1">
