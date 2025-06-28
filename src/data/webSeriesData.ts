@@ -2,6 +2,17 @@ import { Content } from "../types/Content";
 
 export const webSeriesData: Omit<Content, "id">[] = [
   {
+    title: "Lucifer",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FekZobS8isE6mA53RAiGDG93hBxL.jpg",
+    category: "Web Series",
+    rating: 8.1,
+    review:
+      "Charming procedural with supernatural elements. Tom Ellis brings charisma to the Devil himself.",
+    isFavorite: false,
+    genre: ["Crime", "Drama", "Fantasy"],
+  },
+  {
     title: "The Last of Us",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fdmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
@@ -12,16 +23,17 @@ export const webSeriesData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Drama", "Horror", "Thriller"],
   },
+
   {
-    title: "Daredevil",
+    title: "Loki",
     posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FQWbPaDxiB6LW2LjASknzYBvjMj.jpg",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FoJdVHUYrjdS2IqiNztVIP4GPB1p.jpg",
     category: "Web Series",
-    rating: 8.6,
+    rating: 8.3,
     review:
-      "Netflix's grittiest superhero series. The hallway fight scenes are legendary.",
+      "After stealing the Tesseract during the events of 'Avengers: Endgame,' an alternate version of Loki is brought to the mysterious Time Variance Authority, a bureaucratic organization that exists outside of time and space and monitors the timeline.",
     isFavorite: false,
-    genre: ["Action", "Crime", "Drama"],
+    genre: ["Action", "Adventure", "Fantasy", "Science Fiction"],
   },
   {
     title: "You",
@@ -34,16 +46,28 @@ export const webSeriesData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Crime", "Drama", "Romance"],
   },
+
   {
-    title: "Lucifer",
+    title: "Dexter",
     posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FekZobS8isE6mA53RAiGDG93hBxL.jpg",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fq8dWfc4JwQuv3HayIZeO84jAXED.jpg",
     category: "Web Series",
-    rating: 8.1,
+    rating: 8.6,
     review:
-      "Charming procedural with supernatural elements. Tom Ellis brings charisma to the Devil himself.",
+      "Fascinating psychological thriller about a serial killer with a code. Michael C. Hall is phenomenal.",
     isFavorite: false,
-    genre: ["Crime", "Drama", "Fantasy"],
+    genre: ["Crime", "Drama", "Mystery"],
+  },
+  {
+    title: "Daredevil",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FQWbPaDxiB6LW2LjASknzYBvjMj.jpg",
+    category: "Web Series",
+    rating: 8.6,
+    review:
+      "Netflix's grittiest superhero series. The hallway fight scenes are legendary.",
+    isFavorite: false,
+    genre: ["Action", "Crime", "Drama"],
   },
   {
     title: "Squid Game",
@@ -90,17 +114,27 @@ export const webSeriesData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Comedy", "Crime", "Family"],
   },
-
   {
-    title: "Dexter",
+    title: "The Umbrella Academy",
     posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fq8dWfc4JwQuv3HayIZeO84jAXED.jpg",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FqhcwrnnCnN8NE1N6XXKHFmveJR9.jpg",
     category: "Web Series",
-    rating: 8.6,
+    rating: 7.8,
     review:
-      "Fascinating psychological thriller about a serial killer with a code. Michael C. Hall is phenomenal.",
+      "A family of former child heroes, now grown apart, must reunite to continue to protect the world.",
     isFavorite: false,
-    genre: ["Crime", "Drama", "Mystery"],
+    genre: ["Drama", "Action", "Adventure", "Comedy"],
+  },
+  {
+    title: "Outer Banks",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FovDgO2LPfwdVRfvScAqo9aMiIW.jpg",
+    category: "Web Series",
+    rating: 0,
+    review:
+      "On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a legendary treasure linked to his father's disappearance.",
+    isFavorite: false,
+    genre: ["Drama", "Mystery", "Action", "Crime", "Romance", "Thriller"],
   },
   {
     title: "Prison Break",
@@ -135,74 +169,6 @@ export const webSeriesData: Omit<Content, "id">[] = [
       "A father who never stopped fighting against drugs. A son who never stopped using them. Two sides of the same coin. Victor is a cop who has fought all his life to curb cocaine trafficking. His son is a drug addict who has become one of the most wanted burglars in Rio de Janeiro. Will a father's love be enough to save his son's life?",
     isFavorite: false,
     genre: ["Crime", "Drama"],
-  },
-  {
-    title: "Only Murders in the Building",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FbZubW4eLAk2zqk44fSWRDTFfcba.jpg",
-    category: "Web Series",
-    rating: 8.0,
-    review:
-      "Clever murder mystery comedy. Steve Martin, Martin Short, and Selena Gomez have great chemistry.",
-    isFavorite: false,
-    genre: ["Comedy", "Crime", "Mystery"],
-  },
-
-  {
-    title: "The Terminal List",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcgnLLrjlIJlkLQFiHkyuK3lYalz.jpg",
-    category: "Web Series",
-    rating: 7.9,
-    review:
-      "Military thriller with Chris Pratt in a darker role. Intense conspiracy plot with solid action sequences.",
-    isFavorite: false,
-    genre: ["Action", "Drama", "Thriller"],
-  },
-  {
-    title: "The Gentlemen",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Ftw3tzfXaSpmUZIB8ZNqNEGzMBCy.jpg",
-    category: "Web Series",
-    rating: 8.2,
-    review:
-      "Guy Ritchie's stylish crime series. Sharp dialogue and intricate plotting make for entertaining viewing.",
-    isFavorite: false,
-    genre: ["Crime", "Comedy", "Action"],
-  },
-  {
-    title: "Fallout",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FAnsSKR9LuK0T9bAOcPVA3PUvyWj.jpg",
-    category: "Web Series",
-    rating: 8.4,
-    review:
-      "Excellent video game adaptation. Captures the dark humor and post-apocalyptic atmosphere perfectly.",
-    isFavorite: false,
-    genre: ["Action", "Drama", "Sci-Fi"],
-  },
-  {
-    title: "The Recruit",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fgracenote%2F4b22e0cfac4538c8f33b7a9887864541.jpg",
-    category: "Web Series",
-    rating: 7.5,
-    review:
-      "Legal thriller about a young CIA lawyer. Fast-paced with good character development.",
-    isFavorite: false,
-    genre: ["Drama", "Legal", "Thriller"],
-  },
-
-  {
-    title: "Tom Clancy's Jack Ryan",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F8TIEbGYzDRxBQrb7z4cL7AWkgZq.jpg",
-    category: "Web Series",
-    rating: 8.0,
-    review:
-      "Solid political thriller with John Krasinski in the lead. Good action and international intrigue.",
-    isFavorite: false,
-    genre: ["Action", "Drama", "Thriller"],
   },
 
   {
@@ -240,17 +206,6 @@ export const webSeriesData: Omit<Content, "id">[] = [
     genre: ["Adventure", "Drama", "Fantasy"],
   },
   {
-    title: "Outer Banks",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FovDgO2LPfwdVRfvScAqo9aMiIW.jpg",
-    category: "Web Series",
-    rating: 0,
-    review:
-      "On an island of haves and have-nots, teen John B enlists his three best friends to hunt for a legendary treasure linked to his father's disappearance.",
-    isFavorite: false,
-    genre: ["Drama", "Mystery", "Action", "Crime", "Romance", "Thriller"],
-  },
-  {
     title: "Better Call Saul",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fzjg4jpK1Wp2kiRvtt5ND0kznako.jpg",
@@ -284,6 +239,98 @@ export const webSeriesData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Action", "Horror", "Science Fiction", "Thriller", "Adventure"],
   },
+
+  {
+    title: "Fubar",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FryqcPZCEnEahBW4X06QZBUmtavp.jpg",
+    category: "Web Series",
+    rating: 6.5,
+    review:
+      "A father and daughter have both been working as CIA Operatives for years, but each kept their involvement in the CIA hidden from the other, resulting in their entire relationship being a gigantic lie.",
+    isFavorite: false,
+    genre: ["Action", "Adventure", "Thriller", "Comedy"],
+  },
+  {
+    title: "The Wheel of Time",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FihBi24EIr5kwAeY2PqmsgAcCj4n.jpg",
+    category: "Web Series",
+    rating: 7.2,
+    review:
+      "The lives of five young villagers change forever when a strange and powerful woman arrives, claiming one of them is the child of an ancient prophecy with the power to tip the balance between Light and Dark forever.",
+    isFavorite: false,
+    genre: ["Drama", "Fantasy", "Sci-Fi"],
+  },
+  {
+    title: "Citadel",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FAcrDB32TqpAGwvQFbICALGxSzn3.jpg",
+    category: "Web Series",
+    rating: 6.3,
+    review:
+      "Global spy agency Citadel has fallen, and its agents' memories were wiped clean. Now the powerful syndicate, Manticore, is rising in the void. Can the Citadel agents recollect their past and summon the strength to fight back?",
+    isFavorite: false,
+    genre: ["Drama", "Crime", "Action"],
+  },
+  {
+    title: "The Lord of the Rings: The Rings of Power",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FmYLOqiStMxDK3fYZFirgrMt8z5d.jpg",
+    category: "Web Series",
+    rating: 7.0,
+    review:
+      "Epic drama set thousands of years before the events of J.R.R. Tolkien's 'The Hobbit' and 'The Lord of the Rings' follows an ensemble cast of characters, both familiar and new, as they confront the long-feared re-emergence of evil to Middle-earth.",
+    isFavorite: false,
+    genre: ["Drama", "Sci-Fi & Fantasy", "Mystery"],
+  },
+
+  {
+    title: "The Gentlemen",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Ftw3tzfXaSpmUZIB8ZNqNEGzMBCy.jpg",
+    category: "Web Series",
+    rating: 8.2,
+    review:
+      "Guy Ritchie's stylish crime series. Sharp dialogue and intricate plotting make for entertaining viewing.",
+    isFavorite: false,
+    genre: ["Crime", "Comedy", "Action"],
+  },
+  {
+    title: "Fallout",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FAnsSKR9LuK0T9bAOcPVA3PUvyWj.jpg",
+    category: "Web Series",
+    rating: 8.4,
+    review:
+      "Excellent video game adaptation. Captures the dark humor and post-apocalyptic atmosphere perfectly.",
+    isFavorite: false,
+    genre: ["Action", "Drama", "Sci-Fi"],
+  },
+  {
+    title: "The Recruit",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fgracenote%2F4b22e0cfac4538c8f33b7a9887864541.jpg",
+    category: "Web Series",
+    rating: 7.5,
+    review:
+      "Legal thriller about a young CIA lawyer. Fast-paced with good character development.",
+    isFavorite: false,
+    genre: ["Drama", "Legal", "Thriller"],
+  },
+
+  {
+    title: "Tom Clancy's Jack Ryan",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcO4py3L3q5GNPrA0qr1wVDrosK1.jpg",
+    category: "Web Series",
+    rating: 8.0,
+    review:
+      "Solid political thriller with John Krasinski in the lead. Good action and international intrigue.",
+    isFavorite: false,
+    genre: ["Action", "Drama", "Thriller"],
+  },
+
   {
     title: "Sex Education",
     posterUrl:
@@ -295,7 +342,29 @@ export const webSeriesData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Comedy", "Drama"],
   },
+  {
+    title: "Only Murders in the Building",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FbZubW4eLAk2zqk44fSWRDTFfcba.jpg",
+    category: "Web Series",
+    rating: 8.0,
+    review:
+      "Clever murder mystery comedy. Steve Martin, Martin Short, and Selena Gomez have great chemistry.",
+    isFavorite: false,
+    genre: ["Comedy", "Crime", "Mystery"],
+  },
 
+  {
+    title: "The Terminal List",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcgnLLrjlIJlkLQFiHkyuK3lYalz.jpg",
+    category: "Web Series",
+    rating: 7.9,
+    review:
+      "Military thriller with Chris Pratt in a darker role. Intense conspiracy plot with solid action sequences.",
+    isFavorite: false,
+    genre: ["Action", "Drama", "Thriller"],
+  },
   {
     title: "Bridgerton",
     posterUrl:

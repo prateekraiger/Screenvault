@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-transparent w-full overflow-x-hidden box-border">
       <div className="text-center mb-8 mt-12 w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 mx-auto overflow-x-hidden">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-4 break-words max-w-full mx-auto text-balance text-wrap drop-shadow-2xl whitespace-pre-line">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-4 break-words max-w-full mx-auto  text-wrap drop-shadow-2xl whitespace-pre-line">
           <FlipText className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-blue-500 drop-shadow-lg text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-black whitespace-pre-line">
             {`Welcome to\nScreenVault`}
           </FlipText>

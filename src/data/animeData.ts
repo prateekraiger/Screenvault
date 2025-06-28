@@ -287,4 +287,26 @@ export const animeData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Anime", "Animation", "Action", "Adventure"],
   },
+  {
+    title: "Sakamoto Days",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FlBOHMPWetQprntjjtGquHwIHSvx.jpg",
+    category: "Anime",
+    rating: 7.4,
+    review:
+      "Once the world's most feared hitman, Taro Sakamoto falls in love with Store Clerk Aoi. Leaving his violent past, he retires to live a peaceful life. But old enemies threaten to pull him back into the life he thought he'd left for good.",
+    isFavorite: false,
+    genre: ["Animation", "Comedy", "Action", "Adventure"],
+  },
+  {
+    title: "Lupin the Third",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaywOqgw5opNykCW4R8os1liPVnq.jpg",
+    category: "Anime",
+    rating: 7.8,
+    review:
+      "Lupin the 3rd, The World's Greatest thief, who's proud of being the grandson of the infamous French thief: Arsene Lupin. Accompanied by his comrades who help him pull off the biggest heists in thievery history.",
+    isFavorite: false,
+    genre: ["Action", "Adventure", "Comedy", "Crime"],
+  },
 ];

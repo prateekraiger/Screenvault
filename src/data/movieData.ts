@@ -2,6 +2,17 @@ import { Content } from "../types/Content";
 
 export const movieData: Omit<Content, "id">[] = [
   {
+    title: "John Wick",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FtcmcJAXN2nUf1HgY1PL2H72PD6I.jpg",
+    category: "Movie",
+    rating: 7.8,
+    review:
+      "John Wick is a former hitman grieving the loss of his true love. When his home is broken into, robbed, and his dog killed, he is forced to return to action to exact revenge.",
+    isFavorite: false,
+    genre: ["Action", "Thriller", "Crime"],
+  },
+  {
     title: "The Dark Knight",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F3%2Fgracenote%2F3c50cda300a43acf7a538c9aa9597791.jpg",
@@ -11,6 +22,28 @@ export const movieData: Omit<Content, "id">[] = [
       "Heath Ledger's Joker is legendary. Perfect superhero film that transcends the genre.",
     isFavorite: true,
     genre: ["Action", "Crime", "Drama"],
+  },
+  {
+    title: "Black Panther",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F6%2Fgracenote%2F657d64e520ed594577de0a4fc6a4a1e4.jpg",
+    category: "Movie",
+    rating: 7.3,
+    review:
+      "Culturally significant superhero film with stunning visuals. Chadwick Boseman's legacy lives on.",
+    isFavorite: true,
+    genre: ["Action", "Adventure", "Sci-Fi"],
+  },
+  {
+    title: "How to Train Your Dragon",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fgracenote%2F469fdc9108d81df3a9d303b54aa9ef43.jpg",
+    category: "Movie",
+    rating: 8.1,
+    review:
+      "As an ancient threat endangers both Vikings and dragons alike on the isle of Berk, the friendship between Hiccup, an inventive Viking, and Toothless, a Night Fury dragon, becomes the key to both species forging a new future together.",
+    isFavorite: false,
+    genre: ["Family", "Fantasy", "Comedy", "Drama"],
   },
   {
     title: "Fight Club",
@@ -24,17 +57,6 @@ export const movieData: Omit<Content, "id">[] = [
     genre: ["Drama", "Thriller"],
   },
   {
-    title: "Inception",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fbcb81d59b292170f9fbae7c75cac2572.jpg",
-    category: "Movie",
-    rating: 8.8,
-    review:
-      "Complex dream-within-dream narrative. Nolan's masterpiece of practical effects and storytelling.",
-    isFavorite: false,
-    genre: ["Sci-Fi", "Action", "Thriller"],
-  },
-  {
     title: "Interstellar",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F3%2Fgracenote%2F3ca13d8c8155b6e3242b03df4f420484.jpg",
@@ -45,17 +67,19 @@ export const movieData: Omit<Content, "id">[] = [
     isFavorite: true,
     genre: ["Sci-Fi", "Drama", "Adventure"],
   },
+
   {
-    title: "Léon: The Professional",
+    title: "Inception",
     posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F5%2Fgracenote%2F54a2c9a7a012d87a332e9c1efa61c6d6.jpg",
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fbcb81d59b292170f9fbae7c75cac2572.jpg",
     category: "Movie",
-    rating: 8.5,
+    rating: 8.8,
     review:
-      "Touching story of an unlikely mentor-student relationship. Jean Reno and Natalie Portman are excellent.",
+      "Complex dream-within-dream narrative. Nolan's masterpiece of practical effects and storytelling.",
     isFavorite: false,
-    genre: ["Action", "Crime", "Drama"],
+    genre: ["Sci-Fi", "Action", "Thriller"],
   },
+
   {
     title: "Tenet",
     posterUrl:
@@ -79,6 +103,29 @@ export const movieData: Omit<Content, "id">[] = [
     genre: ["Drama", "Crime", "Comedy", "Biography"],
   },
   {
+    title: "Jumanji",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Fb%2Fgracenote%2Fb30ef672ecc953a4bfd501839d352d02.jpg",
+    category: "Movie",
+    rating: 7.4,
+    review:
+      "Four teenagers in detention discover an old video game console with a game they've never heard of. When they decide to play, they are immediately sucked into the jungle world of Jumanji in the bodies of their avatars. They'll have to complete the adventure of their lives filled with fun, thrills and danger or be stuck in the game forever!",
+    isFavorite: false,
+    genre: ["Adventure", "Fantasy", "Comedy"],
+  },
+  {
+    title: "Percy Jackson",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2Ff%2Fgracenote%2Ff01cc1c65fd0da3d8f9b3eb55e96dfa4.jpg",
+    category: "Movie",
+    rating: 6.8,
+    review:
+      "In order to restore their dying safe haven, the son of Poseidon and his friends embark on a quest to the Sea of Monsters, to find the mythical Golden Fleece, all the while trying to stop an ancient evil from rising.",
+    isFavorite: false,
+    genre: ["Adventure", "Family", "Fantasy"],
+  },
+
+  {
     title: "The Terminator",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fgracenote%2F4e26d12a9a0dbfdbaf6c349d5c8965c9.jpg",
@@ -100,17 +147,7 @@ export const movieData: Omit<Content, "id">[] = [
     isFavorite: true,
     genre: ["Romance", "Drama", "History"],
   },
-  {
-    title: "Black Panther",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F6%2Fgracenote%2F657d64e520ed594577de0a4fc6a4a1e4.jpg",
-    category: "Movie",
-    rating: 7.3,
-    review:
-      "Culturally significant superhero film with stunning visuals. Chadwick Boseman's legacy lives on.",
-    isFavorite: true,
-    genre: ["Action", "Adventure", "Sci-Fi"],
-  },
+
   {
     title: "Blade Runner 2049",
     posterUrl:
@@ -187,5 +224,27 @@ export const movieData: Omit<Content, "id">[] = [
       "Bob Parr has given up his superhero days to log in time as an insurance adjuster and raise his three children with his formerly heroic wife in suburbia. But when he receives a mysterious assignment, it's time to get back into costume.",
     isFavorite: false,
     genre: ["Action", "Adventure", "Animation", "Family"],
+  },
+  {
+    title: "Léon: The Professional",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F5%2Fgracenote%2F54a2c9a7a012d87a332e9c1efa61c6d6.jpg",
+    category: "Movie",
+    rating: 8.5,
+    review:
+      "Touching story of an unlikely mentor-student relationship. Jean Reno and Natalie Portman are excellent.",
+    isFavorite: false,
+    genre: ["Action", "Crime", "Drama"],
+  },
+  {
+    title: "Dune",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F8%2Fgracenote%2F8a557d3d98fe2d8969bfd17e5c21cadc.jpg",
+    category: "Movie",
+    rating: 8.1,
+    review:
+      "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
+    isFavorite: false,
+    genre: ["Science Fiction", "Action", "Drama"],
   },
 ];

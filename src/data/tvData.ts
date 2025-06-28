@@ -247,4 +247,15 @@ export const tvData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Adventure", "Drama", "Fantasy"],
   },
+  {
+    title: "Avatar the Last Airbender",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FsEbb7pGyHEzebbXlT51evNVQJss.jpg",
+    category: "TV",
+    rating: 7.3,
+    review:
+      "A young boy known as the Avatar must master the four elemental powers to save the world, and fight against an enemy bent on stopping him.",
+    isFavorite: false,
+    genre: ["Family", "Comedy", "Fantasy", "Mystery"],
+  },
 ];
