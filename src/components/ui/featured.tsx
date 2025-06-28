@@ -1,7 +1,7 @@
 import React from "react";
 import { DraggableCardBody, DraggableCardContainer } from "./draggable-card";
 
-export default function DraggableCardDemo() {
+export default function Featured() {
   const items = [
     {
       title: "Breaking Bad",
