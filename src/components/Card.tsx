@@ -2,7 +2,6 @@ import React from "react";
 import { BlurFade } from "./magicui/blur-fade";
 
 interface CardProps {
-  id: string;
   title: string;
   posterUrl: string;
   category: string;
@@ -12,7 +11,6 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({
-  id,
   title,
   posterUrl,
   category,

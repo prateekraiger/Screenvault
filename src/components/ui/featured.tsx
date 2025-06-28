@@ -9,20 +9,21 @@ export default function DraggableCardDemo() {
         "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FineLOBPG8AZsluYwnkMpHRyu7L.jpg",
     },
     {
+      title: "Friends",
+      image:
+        "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F2koX1xLkpTQM4IZebYvKysFW1Nh.jpg",
+    },
+    {
       title: "Money Heist",
       image:
-        "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfYkyF19UJdpSCMRwcQyoryBlnU3.jpg",
+        "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F65f9SDRqooLZEnaC629TnDDiGzb.jpg",
     },
     {
       title: "Game of Thrones",
       image:
         "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
     },
-    {
-      title: "Squid Game",
-      image:
-        "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F1QdXdRYfktUSONkl1oD5gc6Be0s.jpg",
-    },
+
     {
       title: "You",
       image:

@@ -1,9 +1,9 @@
-import { useId, useState } from "react";
-import { Search as SearchIcon, Menu, X } from "lucide-react";
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import { FaPlayCircle } from "react-icons/fa";
 import { Logo } from "./Logo";
+import playCircle from "../assets/play-circle.svg";
+import pauseCircle from "../assets/pause-circle.svg";
 
 const navigationLinks = [
   { to: "/", label: "Home" },
@@ -14,9 +14,37 @@ const navigationLinks = [
 ];
 
 export default function Navbar() {
-  const id = useId();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [searchFocused, setSearchFocused] = useState(false);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  const audioElementRef = useRef<HTMLAudioElement>(null);
+
+  // Play/pause handler for audio and icon
+  const handlePlayPauseClick = () => {
+    const nextState = !isAudioPlaying;
+    setIsAudioPlaying(nextState);
+    if (audioElementRef.current) {
+      if (nextState) {
+        audioElementRef.current.play();
+      } else {
+        audioElementRef.current.pause();
+      }
+    }
+  };
+
+  // Manage audio playback
+  useEffect(() => {
+    if (isAudioPlaying) {
+      audioElementRef.current?.play();
+    } else {
+      audioElementRef.current?.pause();
+    }
+  }, [isAudioPlaying]);
+
+  useEffect(() => {
+    if (audioElementRef.current) {
+      audioElementRef.current.volume = 0.3;
+    }
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#23272F]/90 backdrop-blur-xl border-b border-cyan-900/40 shadow-2xl w-full m-0 p-0">
@@ -41,18 +69,48 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-xl text-cyan-300 hover:text-cyan-400 hover:bg-[#164E63]/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+          {/* Play Button and Mobile Menu Button */}
+          <div className="flex items-center gap-4">
+            {/* Play Button with Animated Indicator */}
+            <button
+              onClick={handlePlayPauseClick}
+              className="flex items-center group"
+              aria-label={isAudioPlaying ? "Pause audio" : "Play audio"}
+              style={{
+                background: "none",
+                border: "none",
+                padding: 0,
+                cursor: "pointer",
+              }}
+              type="button"
+            >
+              <img
+                src={isAudioPlaying ? pauseCircle : playCircle}
+                alt={isAudioPlaying ? "Pause" : "Play"}
+                className="w-7 h-7"
+                style={{ filter: "invert(1) brightness(2)" }}
+              />
+              <audio
+                ref={audioElementRef}
+                className="hidden"
+                src="/loop.mp3"
+                loop
+                autoPlay
+              />
+            </button>
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden p-2 rounded-xl text-cyan-300 hover:text-cyan-400 hover:bg-[#164E63]/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Search Bar (hidden) */}

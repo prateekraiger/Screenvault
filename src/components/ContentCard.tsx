@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Heart, Clock, CheckCircle, XCircle } from "lucide-react";
+import { Star, Heart } from "lucide-react";
 import { Content } from "../types/Content";
 import { BlurFade } from "./magicui/blur-fade";
 
@@ -8,19 +8,6 @@ interface ContentCardProps {
 }
 
 const ContentCard: React.FC<ContentCardProps> = ({ content }) => {
-  const getStatusIcon = (status: string) => {
-    switch (status) {
-      case "Completed":
-        return <CheckCircle className="h-4 w-4 text-green-400" />;
-      case "Watching":
-        return <Clock className="h-4 w-4 text-cyan-400" />;
-      case "Dropped":
-        return <XCircle className="h-4 w-4 text-red-400" />;
-      default:
-        return null;
-    }
-  };
-
   const getCategoryColor = (category: string) => {
     switch (category) {
       case "TV":
