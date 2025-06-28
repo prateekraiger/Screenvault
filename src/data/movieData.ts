@@ -57,17 +57,6 @@ export const movieData: Omit<Content, "id">[] = [
     genre: ["Family", "Fantasy", "Comedy", "Drama"],
   },
   {
-    title: "Fight Club",
-    posterUrl:
-      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F4%2Fgracenote%2F4d5260a099236bf88c292c7c8a277bfc.jpg",
-    category: "Movie",
-    rating: 8.8,
-    review:
-      "Mind-bending psychological thriller with social commentary. Brad Pitt and Edward Norton are phenomenal.",
-    isFavorite: false,
-    genre: ["Drama", "Thriller"],
-  },
-  {
     title: "Interstellar",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fmetadata-static.plex.tv%2F3%2Fgracenote%2F3ca13d8c8155b6e3242b03df4f420484.jpg",
