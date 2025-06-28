@@ -1,3 +1,7 @@
+# ScreenVault
+
+![ScreenVault Preview](https://res.cloudinary.com/dk3pg4zly/image/upload/v1751098921/screenvault_tgy7an.png)
+
 # StreamCatalog
 
 Discover, track, and review your favorite movies, TV shows, and anime series with StreamCatalog.

@@ -75,3 +75,12 @@
     height: 0.5rem;
   }
 }
+
+.preview-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
