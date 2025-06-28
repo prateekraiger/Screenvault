@@ -6,36 +6,36 @@ import DraggableCardDemo from "@/components/ui/draggable-card-demo-2";
 
 const routes = [
   {
-    label: "TV Shows",
-    path: "/tv",
-    icon: <FaTv className="w-8 h-8 text-cyan-400 mb-3" />,
-  },
-  {
     label: "Anime",
     path: "/anime",
     icon: <FaDragon className="w-8 h-8 text-pink-400 mb-3" />,
-  },
-  {
-    label: "Web Series",
-    path: "/web-series",
-    icon: <FaGlobe className="w-8 h-8 text-teal-400 mb-3" />,
   },
   {
     label: "Movies",
     path: "/movies",
     icon: <FaFilm className="w-8 h-8 text-yellow-400 mb-3" />,
   },
+  {
+    label: "TV Shows",
+    path: "/tv",
+    icon: <FaTv className="w-8 h-8 text-cyan-400 mb-3" />,
+  },
+  {
+    label: "Web Series",
+    path: "/web-series",
+    icon: <FaGlobe className="w-8 h-8 text-teal-400 mb-3" />,
+  },
 ];
 
 const categoryDescriptions: Record<string, string> = {
   "TV Shows":
-    "Serialized programs broadcast on television, often with multiple seasons and episodes, telling ongoing stories or featuring recurring characters.",
+    "Serialized television programs with recurring characters, multiple seasons, and diverse stories across genres.",
   "Web Series":
-    "Episodic content released primarily on the internet, often with unique storytelling styles and shorter seasons.",
+    "Episodic online content with unique storytelling, shorter seasons, and creative formats.",
   Anime:
-    "Japanese animated series or films, known for their vibrant art, imaginative worlds, and diverse genres.",
+    "Japanese animated shows or films known for vibrant art, fantasy worlds, and varied genres.",
   Movies:
-    "Feature-length films from around the world, spanning every genre and style.",
+    "Feature-length films from around the world, spanning all genres and storytelling styles.",
 };
 
 export default function Home() {
