@@ -2,7 +2,7 @@ import React from "react";
 import { FlipText } from "@/components/magicui/flip-text";
 import { useNavigate } from "react-router-dom";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
-import { FaTv, FaGlobe, FaFilm, FaDragon } from "react-icons/fa";
+import { FaTv, FaGlobe, FaFilm, FaDragon, FaMusic } from "react-icons/fa";
 import Featured from "@/components/ui/featured";
 
 const routes = [
@@ -26,6 +26,11 @@ const routes = [
     path: "/web-series",
     icon: <FaGlobe className="w-8 h-8 text-teal-400 mb-3" />,
   },
+  {
+    label: "Music",
+    path: "/music",
+    icon: <FaMusic className="w-8 h-8 text-green-400 mb-3" />,
+  },
 ];
 
 const categoryDescriptions: Record<string, string> = {
@@ -37,6 +42,8 @@ const categoryDescriptions: Record<string, string> = {
     "Japanese animated shows or films known for vibrant art, fantasy worlds, and varied genres.",
   Movies:
     "Feature-length films from around the world, spanning all genres and storytelling styles.",
+  Music:
+    "Your Spotify profile, currently playing, and playlists—all in one place!",
 };
 
 export default function Home() {
@@ -57,7 +64,7 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center w-full px-2 sm:px-4 lg:px-8 xl:px-10 2xl:px-12 min-w-0 overflow-x-hidden">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 w-full max-w-6xl min-w-0 overflow-x-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-full max-w-6xl min-w-0 overflow-x-hidden">
           {routes.map((route) => (
             <button
               key={route.path}
