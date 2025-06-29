@@ -8,6 +8,7 @@ import WebSeriesPage from "./pages/WebSeriesPage";
 import AnimePage from "./pages/AnimePage";
 import MoviesPage from "./pages/MoviesPage";
 import AllContentPage from "./pages/AllContentPage";
+import MusicPage from "./pages/MusicPage";
 import Loader from "@/components/Loader";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -59,6 +60,7 @@ function MainApp() {
                 <Route path="/anime" element={<AnimePage />} />
                 <Route path="/movies" element={<MoviesPage />} />
                 <Route path="/all" element={<AllContentPage />} />
+                <Route path="/music" element={<MusicPage />} />
               </Routes>
             </div>
           </main>

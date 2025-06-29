@@ -12,6 +12,7 @@ const navigationLinks = [
   { to: "/movies", label: "Movies" },
   { to: "/tv", label: "TV Shows" },
   { to: "/web-series", label: "Web Series" },
+  { to: "/music", label: "Music" },
 ];
 
 export default function Navbar() {
