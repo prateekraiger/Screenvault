@@ -29,7 +29,7 @@ const SearchBar: React.FC = () => {
       </svg>
       <input
         id="query"
-        className="font-montserrat w-full h-[48px] pl-12 pr-4 shadow-[0_2px_16px_0_rgba(6,182,212,0.10)] border border-cyan-700/40 rounded-xl bg-[#181b22] outline-none text-cyan-100 placeholder:text-cyan-400 transition-all duration-250 ease-[cubic-bezier\(0.19,1,0.22,1\)] cursor-text z-0 focus:shadow-[0_0_0_2.5px_#06b6d4,0_2px_16px_0_rgba(6,182,212,0.10)] focus:border-cyan-400 hover:border-cyan-400 hover:shadow-[0_0_0_2.5px_#06b6d4,0_2px_16px_0_rgba(6,182,212,0.10)] active:scale-95"
+        className="font-montserrat w-full h-[48px] pl-12 pr-4 shadow-[0_2px_16px_0_rgba(6,182,212,0.10)] border border-cyan-700/40 rounded-xl bg-[#181b22] outline-none text-cyan-100 placeholder:text-cyan-400 transition-all duration-250 ease-[cubic-bezier\[0.19,1,0.22,1\]] cursor-text z-0 focus:shadow-[0_0_0_2.5px_#06b6d4,0_2px_16px_0_rgba(6,182,212,0.10)] focus:border-cyan-400 hover:border-cyan-400 hover:shadow-[0_0_0_2.5px_#06b6d4,0_2px_16px_0_rgba(6,182,212,0.10)] active:scale-95"
         type="search"
         placeholder="Search for series, movie or anime..."
         name="searchbar"

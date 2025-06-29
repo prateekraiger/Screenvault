@@ -59,10 +59,7 @@ export default function Navbar() {
             to="/"
             className="flex items-center space-x-2 sm:space-x-3 group min-w-0 flex-shrink-0"
           >
-            <Logo
-              size={44}
-              textSize="text-3xl sm:text-4xl md:text-5xl max-w-[60vw] truncate overflow-hidden"
-            />
+            <Logo size={40} textSize="text-2xl sm:text-3xl md:text-4xl" />
           </Link>
 
           {/* Right Section: nav links, search bar, play button, menu button */}
