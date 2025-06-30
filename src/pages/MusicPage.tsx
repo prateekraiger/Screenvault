@@ -1,5 +1,4 @@
 /// <reference types="vite/client" />
-import React, { useState } from "react";
 
 export default function MusicPage() {
   // Static playlist data
@@ -115,7 +114,6 @@ export default function MusicPage() {
                 width="100%"
                 height="420"
                 frameBorder="0"
-                allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
                 title="Spotify Playlist"
