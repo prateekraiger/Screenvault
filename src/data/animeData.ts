@@ -309,4 +309,15 @@ export const animeData: Omit<Content, "id">[] = [
     isFavorite: false,
     genre: ["Action", "Adventure", "Comedy", "Crime"],
   },
+  {
+    title: "Black Butler",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FiXGs130TRoUplHf0o86zp9MqAYc.jpg",
+    category: "Anime",
+    rating: 7.6,
+    review:
+      "Ciel Phantomhive takes care of the many unsettling events in Victorian England. Aided by Sebastian Michaelis, his loyal butler with seemingly inhuman abilities. But is there more to this black-clad butler than meets the eye?",
+    isFavorite: false,
+    genre: ["Horror", "Thriller", "Fantasy"],
+  },
 ];
