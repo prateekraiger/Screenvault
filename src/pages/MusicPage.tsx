@@ -6,16 +6,16 @@ export default function MusicPage() {
   const demoPlaylist = {
     name: "My top tracks playlist",
     creator: "N8king",
-    url: "https://open.spotify.com/playlist/0nPBmn6acfwCjiDYEmaCaN",
+    url: "https://open.spotify.com/playlist/0nPBmn6acfwCjiDYEmaCaN?si=XG2MqFwLRK2xfbebOgTBJw",
     tracks: [
+      { title: "Espresso", artist: "Sabrin Carpenter" },
       { title: "Sapphire", artist: "Ed Sheeran" },
       { title: "Sugar", artist: "Maroon 5" },
-      {
-        title: "Rockabye (feat. Sean Paul & Anne-Marie)",
-        artist: "Clean Bandit, Anne-Marie, Sean Paul",
-      },
       { title: "The Nights", artist: "Avicii" },
-      { title: "Viva La Vida", artist: "Coldplay" },
+      { title: "Beautiful Things", artist: "Benson Boone" },
+      { title: "SNAP", artist: "Rosa Linn" },
+      { title: "Timber", artist: "PitBull" },
+      { title: "Sensitive", artist: "KR$NA" },
     ],
   };
 
@@ -86,7 +86,7 @@ export default function MusicPage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-start mb-16">
           {/* 3. Currently Playing Card (bigger) */}
-          <div className="rounded-2xl shadow-xl border border-cyan-900/40 bg-gradient-to-br from-[#23272F]/90 to-[#191414]/90 p-6 flex flex-col items-center justify-center min-h-[352px] backdrop-blur-md">
+          <div className="rounded-2xl shadow-xl border border-cyan-900/40 bg-gradient-to-br from-[#23272F]/90 to-[#191414]/90 p-6 flex flex-col items-center justify-center min-h-[372px] backdrop-blur-md">
             <h2 className="text-lg font-bold text-cyan-200 mb-3 text-center">
               Currently Playing
             </h2>
@@ -104,16 +104,16 @@ export default function MusicPage() {
             </a>
           </div>
           {/* 4. Featured Playlist Card */}
-          <div className="rounded-2xl shadow-xl border border-cyan-900/40 bg-gradient-to-br from-[#23272F]/90 to-[#191414]/90 p-6 flex flex-col items-center backdrop-blur-md min-h-[352px]">
+          <div className="rounded-2xl shadow-xl border border-cyan-900/40 bg-gradient-to-br from-[#23272F]/90 to-[#191414]/90 p-6 flex flex-col items-center backdrop-blur-md min-h-[372px]">
             <h2 className="text-2xl font-bold text-cyan-200 mb-4 text-center">
               Featured Playlist
             </h2>
             <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-cyan-900/40">
               <iframe
                 style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/playlist/3DAppenp4VT1F5dJpaa19u?utm_source=generator&theme=0"
+                src="https://open.spotify.com/embed/playlist/0W18dQC55RQb8yrl3XUbpG?utm_source=generator&theme=0"
                 width="100%"
-                height="352"
+                height="420"
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
