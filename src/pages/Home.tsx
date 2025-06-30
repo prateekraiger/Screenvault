@@ -2,7 +2,14 @@ import React from "react";
 import { FlipText } from "@/components/magicui/flip-text";
 import { useNavigate } from "react-router-dom";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
-import { FaTv, FaGlobe, FaFilm, FaDragon, FaMusic } from "react-icons/fa";
+import {
+  FaTv,
+  FaGlobe,
+  FaFilm,
+  FaDragon,
+  FaMusic,
+  FaGamepad,
+} from "react-icons/fa";
 import Featured from "@/components/ui/featured";
 
 const routes = [
@@ -31,6 +38,11 @@ const routes = [
     path: "/music",
     icon: <FaMusic className="w-8 h-8 text-green-400 mb-3" />,
   },
+  {
+    label: "Games",
+    path: "/games",
+    icon: <FaGamepad className="w-8 h-8 text-indigo-400 mb-3" />,
+  },
 ];
 
 const categoryDescriptions: Record<string, string> = {
@@ -44,6 +56,7 @@ const categoryDescriptions: Record<string, string> = {
     "Feature-length films from around the world, spanning all genres and storytelling styles.",
   Music:
     "Your Spotify profile, currently playing, and playlists—all in one place!",
+  Games: "Fun and interactive games to play and enjoy! (Coming soon)",
 };
 
 export default function Home() {

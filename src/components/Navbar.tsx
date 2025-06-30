@@ -13,6 +13,7 @@ const navigationLinks = [
   { to: "/tv", label: "TV Shows" },
   { to: "/web-series", label: "Web Series" },
   { to: "/music", label: "Music" },
+  { to: "/games", label: "Games" },
 ];
 
 export default function Navbar() {

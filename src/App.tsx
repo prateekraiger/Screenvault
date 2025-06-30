@@ -13,6 +13,7 @@ import Loader from "@/components/Loader";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SmoothCursor } from "./components/ui/smooth-cursor";
+import GamesPage from "./pages/GamesPage";
 
 function useIsDesktop() {
   const [isDesktop, setIsDesktop] = useState(() =>
@@ -61,6 +62,7 @@ function MainApp() {
                 <Route path="/movies" element={<MoviesPage />} />
                 <Route path="/all" element={<AllContentPage />} />
                 <Route path="/music" element={<MusicPage />} />
+                <Route path="/games" element={<GamesPage />} />
               </Routes>
             </div>
           </main>
