@@ -27,7 +27,7 @@ const games = [
     colSpan: "col-span-2 md:col-span-2 md:rounded-tr-2xl",
   },
   {
-    name: "Valorant v2",
+    name: "Valorant(ACE!)",
     video: VIDEO3,
     poster: THUMB3,
     colSpan: "col-span-2 md:col-span-2 md:rounded-bl-2xl",
