@@ -2,6 +2,7 @@ import React from "react";
 import { FlipText } from "@/components/magicui/flip-text";
 import { useNavigate } from "react-router-dom";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
+import { MagicCard } from "@/components/magicui/magic-card";
 import {
   FaTv,
   FaGlobe,
@@ -56,7 +57,7 @@ const categoryDescriptions: Record<string, string> = {
     "Feature-length films from around the world, spanning all genres and storytelling styles.",
   Music:
     "Your Spotify profile, currently playing, and playlists—all in one place!",
-  Games: "Fun and interactive games to play and enjoy! (Coming soon)",
+  Games: "Fun and interactive games to play and enjoy!",
 };
 
 export default function Home() {
@@ -84,19 +85,21 @@ export default function Home() {
               onClick={() => navigate(route.path)}
               className="w-full min-w-0"
             >
-              <BackgroundGradient className="rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center cursor-pointer transition-transform hover:scale-105 border border-cyan-900/40 shadow-2xl group min-w-0 w-full max-w-xs mx-auto">
-                {React.cloneElement(route.icon, {
-                  className:
-                    "w-7 h-7 sm:w-8 sm:h-8 mb-2 sm:mb-3 " +
-                    route.icon.props.className,
-                })}
-                <span className="text-base sm:text-2xl md:text-3xl font-extrabold text-cyan-100 mb-1 sm:mb-2 tracking-tight group-hover:text-cyan-300 transition-colors break-words text-wrap">
-                  <FlipText>{route.label}</FlipText>
-                </span>
-                <span className="text-cyan-200/90 text-xs sm:text-base text-center mt-1 sm:mt-2 font-medium break-words text-wrap">
-                  {categoryDescriptions[route.label]}
-                </span>
-              </BackgroundGradient>
+              <MagicCard className="rounded-3xl">
+                <BackgroundGradient className="rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center cursor-pointer transition-transform hover:scale-105 shadow-2xl group min-w-0 w-full max-w-xs mx-auto border-0">
+                  {React.cloneElement(route.icon, {
+                    className:
+                      "w-7 h-7 sm:w-8 sm:h-8 mb-2 sm:mb-3 " +
+                      route.icon.props.className,
+                  })}
+                  <span className="text-base sm:text-2xl md:text-3xl font-extrabold text-cyan-100 mb-1 sm:mb-2 tracking-tight group-hover:text-cyan-300 transition-colors break-words text-wrap">
+                    <FlipText>{route.label}</FlipText>
+                  </span>
+                  <span className="text-cyan-200/90 text-xs sm:text-base text-center mt-1 sm:mt-2 font-medium break-words text-wrap">
+                    {categoryDescriptions[route.label]}
+                  </span>
+                </BackgroundGradient>
+              </MagicCard>
             </button>
           ))}
         </div>
