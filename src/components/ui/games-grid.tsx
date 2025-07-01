@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Card } from "@/components/ui/card";
 
-const VIDEO1 = "https://ik.imagekit.io/mtk2a0sx6/clip2.mp4";
+const VIDEO1 = "https://ik.imagekit.io/mtk2a0sx6/valorant.mp4?tr=orig";
 const VIDEO2 = "https://ik.imagekit.io/mtk2a0sx6/rdr.mp4?tr=orig";
 const VIDEO3 = "https://ik.imagekit.io/mtk2a0sx6/clip2.mp4";
 const VIDEO4 = "https://ik.imagekit.io/mtk2a0sx6/human-torch.mp4?tr=orig";
