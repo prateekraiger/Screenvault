@@ -36,7 +36,16 @@ export default function ThreeDMarqueeDemo() {
     "https://assets.aceternity.com/world-map.webp",
   ];
   return (
-    <div className="mx-auto my-8 max-w-7xl px-2 sm:px-4 md:px-8 py-6 bg-white/5 dark:bg-neutral-900 rounded-2xl shadow-lg flex justify-center items-center">
+    <div
+      className="mx-auto my-8 max-w-7xl px-2 sm:px-4 md:px-8 py-6 rounded-2xl shadow-xl flex justify-center items-center"
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(30,41,59,0.85) 60%, rgba(17,24,39,0.85) 100%)",
+        backdropFilter: "blur(8px)",
+        WebkitBackdropFilter: "blur(8px)",
+        border: "1.5px solid rgba(255,255,255,0.08)",
+      }}
+    >
       <ThreeDMarquee images={images} />
     </div>
   );
