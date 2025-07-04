@@ -12,6 +12,7 @@ import {
   FaGamepad,
 } from "react-icons/fa";
 import Featured from "@/components/ui/featured";
+import ThreeDMarqueeDemo from "@/components/ui/3d-marquee-demo";
 
 const routes = [
   {
@@ -106,14 +107,12 @@ export default function Home() {
       </div>
 
       {/* Hall of Fame Section */}
-      <div className="w-full flex flex-col items-center my-8 sm:my-14 md:my-20 px-2 sm:px-4 lg:px-8 xl:px-10 2xl:px-12 min-w-0 overflow-x-hidden">
-        <div className="w-full rounded-3xl shadow-2xl border-2 border-gray-800 p-4 sm:p-8 md:p-10 flex flex-col items-center min-h-[10rem] sm:min-h-[16rem] md:min-h-[20rem] bg-transparent">
-          <h2 className="text-xl sm:text-4xl md:text-6xl font-extrabold mb-2 sm:mb-8 text-center text-white drop-shadow-lg tracking-tight break-words text-wrap max-w-xs sm:max-w-2xl mx-auto">
-            Hall of Fame
-          </h2>
-          <div className="w-full flex justify-center min-w-0">
-            <Featured />
-          </div>
+      <div className="w-full my-8 sm:my-14 md:my-20 px-0">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-8 text-center text-white drop-shadow-lg tracking-tight break-words text-wrap w-full">
+          Hall of Fame
+        </h2>
+        <div className="w-full">
+          <ThreeDMarqueeDemo />
         </div>
       </div>
     </div>
