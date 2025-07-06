@@ -107,16 +107,18 @@ export default function Home() {
       </div>
 
       {/* Hall of Fame Section */}
-      <div className="w-full my-8 sm:my-14 md:my-20 px-0">
-        <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-8 text-center text-white drop-shadow-lg tracking-tight break-words text-wrap w-full">
-          Hall of Fame
-        </h2>
-        <div className="w-full flex justify-center">
-          <div className="w-full max-w-6xl h-64 sm:h-80 md:h-96 lg:h-[32rem] xl:h-[36rem] 2xl:h-[40rem]">
-            <ThreeDMarqueeDemo />
+      <section className="w-full flex justify-center px-2 sm:px-4 md:px-8 py-8">
+        <div className="w-full max-w-[1920px] bg-gradient-to-br from-slate-900/90 via-slate-800/80 to-slate-950/90 rounded-3xl shadow-2xl border border-slate-700/40 p-4 sm:p-8 md:p-12 flex flex-col items-center">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-8 text-center text-white drop-shadow-lg tracking-tight break-words text-wrap w-full">
+            Hall of Fame
+          </h2>
+          <div className="w-full flex justify-center">
+            <div className="w-full">
+              <ThreeDMarqueeDemo />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -18,18 +18,13 @@ export const ThreeDMarquee = ({
   return (
     <div
       className={cn(
-        "mx-auto block h-[600px] overflow-hidden rounded-2xl max-sm:h-100",
+        "w-full max-w-[1800px] mx-auto h-[600px] sm:h-[700px] md:h-[800px] lg:h-[900px] xl:h-[1000px] rounded-3xl shadow-2xl overflow-hidden",
         className
       )}
     >
-      <div className="flex size-full items-center justify-center">
-        <div className="size-[1720px] shrink-0 scale-50 sm:scale-75 lg:scale-100">
-          <div
-            style={{
-              transform: "rotateX(55deg) rotateY(0deg) rotateZ(-45deg)",
-            }}
-            className="relative top-96 right-[50%] grid size-full origin-top-left grid-cols-4 gap-8 transform-3d"
-          >
+      <div className="flex w-full h-full items-center justify-center">
+        <div className="w-full h-full flex items-stretch justify-center">
+          <div className="grid w-full h-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {chunks.map((subarray, colIndex) => (
               <motion.div
                 animate={{ y: colIndex % 2 === 0 ? 100 : -100 }}
@@ -39,7 +34,7 @@ export const ThreeDMarquee = ({
                   repeatType: "reverse",
                 }}
                 key={colIndex + "marquee"}
-                className="flex flex-col items-start gap-8"
+                className="flex flex-col items-stretch gap-4 h-full justify-between"
               >
                 <GridLineVertical className="-left-4" offset="80px" />
                 {subarray.map((image, imageIndex) => (
@@ -56,9 +51,7 @@ export const ThreeDMarquee = ({
                       key={imageIndex + image}
                       src={image}
                       alt={`Image ${imageIndex + 1}`}
-                      className="aspect-[970/700] rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl"
-                      width={970}
-                      height={700}
+                      className="w-full h-full min-h-[120px] max-h-[260px] sm:max-h-[320px] md:max-h-[400px] rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl"
                     />
                   </div>
                 ))}
