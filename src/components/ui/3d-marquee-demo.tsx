@@ -3,40 +3,29 @@ import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 
 export default function ThreeDMarqueeDemo() {
   const images = [
-    // Row 1
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 1
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 2
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 3
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 4
+    "https://wallpapercave.com/wp/wp8890308.jpg",
+    "https://wallpapercave.com/wp/wp8890308.jpg",
+    "https://wallpapercave.com/wp/wp8890308.jpg",
+    "https://wallpapercave.com/wp/wp8890308.jpg",
+    "https://wallpapercave.com/wp/wp9161037.png ",
+    "https://wallpapercave.com/wp/wp9161037.png ",
+    "https://wallpapercave.com/wp/wp4937652.jpg",
+    "https://wallpapercave.com/wp/wp2156334.jpg",
+    "https://wallpapercave.com/wp/wp15188366.webp",
+    "https://wallpapercave.com/wp/wp4292452.jpg",
+    "https://wallpapercave.com/wp/wp4937652.jpg",
     "https://wallpapercave.com/wp/wp9944877.png",
-
-    // Row 2 (custom images)
-    "https://wallpapercave.com/wp/wp4937652.jpg", // col 1
-    "https://wallpapercave.com/wp/wp2156334.jpg", // col 2
-    "https://wallpapercave.com/wp/wp15188366.webp", // col 3
-    "https://wallpapercave.com/wp/wp4292452.jpg", // col 4
-    "https://wallpapercave.com/wp/wp4937652.jpg", // col 1 (repeat for animation)
-    "https://wallpapercave.com/wp/wp9944877.png",
-    // Row 3
-    // col 2
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 3
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 4
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 1
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 2
-
-    // Row 4
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 3
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 4
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 1
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 2
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 3
-
-    // Row 5
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 4
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 1
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 2
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 3
-    "https://wallpapercave.com/wp/wp6416150.jpg", // col 4
+    "https://wallpapercave.com/wp/wp12764521.jpg",
+    "https://wallpapercave.com/wp/wp12764521.jpg",
+    "https://wallpapercave.com/wp/wp12764521.jpg",
+    "https://wallpapercave.com/wp/wp12764521.jpg",
+    "https://wallpapercave.com/wp/wp12764521.jpg",
+    "https://wallpapercave.com/wp/wp12764521.jpg",
+    "https://wallpapercave.com/wp/wp14189947.png",
+    "https://wallpapercave.com/wp/wp14189947.png",
+    "https://wallpapercave.com/wp/wp14189947.png",
+    "https://wallpapercave.com/wp/wp14189947.png",
+    "https://wallpapercave.com/wp/wp14189947.png",
   ];
   return (
     <div
