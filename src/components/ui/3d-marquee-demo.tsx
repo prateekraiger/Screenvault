@@ -3,7 +3,7 @@ import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 
 export default function ThreeDMarqueeDemo() {
   const images = [
-    "https://assets.aceternity.com/cloudinary_bkp/3d-card.png",
+    "https://wallpapercave.com/wp/wp11390637.jpg",
     "https://assets.aceternity.com/animated-modal.png",
     "https://assets.aceternity.com/animated-testimonials.webp",
     "https://assets.aceternity.com/cloudinary_bkp/Tooltip_luwy44.png",
@@ -14,14 +14,14 @@ export default function ThreeDMarqueeDemo() {
     "https://assets.aceternity.com/hero-highlight.png",
     "https://assets.aceternity.com/carousel.webp",
     "https://assets.aceternity.com/placeholders-and-vanish-input.png",
-    "https://assets.aceternity.com/shooting-stars-and-stars-background.png",
-    "https://assets.aceternity.com/signup-form.png",
-    "https://assets.aceternity.com/cloudinary_bkp/stars_sxle3d.png",
-    "https://assets.aceternity.com/spotlight-new.webp",
-    "https://assets.aceternity.com/cloudinary_bkp/Spotlight_ar5jpr.png",
+    "https://wallpapercave.com/wp/wp9944877.png",
+    "https://wallpapercave.com/wp/wp4937652.jpg",
+    "https://wallpapercave.com/wp/wp2156334.jpg",
+    "https://wallpapercave.com/wp/wp15188366.webp",
+    "https://wallpapercave.com/wp/wp4292452.jpg",
     "https://assets.aceternity.com/cloudinary_bkp/Parallax_Scroll_pzlatw_anfkh7.png",
-    "https://assets.aceternity.com/tabs.png",
-    "https://assets.aceternity.com/cloudinary_bkp/Tracing_Beam_npujte.png",
+    "https://wallpapercave.com/wp/wp6416150.jpg",
+    "https://wallpapercave.com/wp/wp6416150.jpg",
     "https://assets.aceternity.com/cloudinary_bkp/typewriter-effect.png",
     "https://assets.aceternity.com/glowing-effect.webp",
     "https://assets.aceternity.com/hover-border-gradient.png",
@@ -33,11 +33,11 @@ export default function ThreeDMarqueeDemo() {
     "https://assets.aceternity.com/multi-step-loader.png",
     "https://assets.aceternity.com/vortex.png",
     "https://assets.aceternity.com/wobble-card.png",
-    "https://assets.aceternity.com/world-map.webp",
+    "",
   ];
   return (
     <div
-      className="mx-auto my-8 max-w-7xl px-2 sm:px-4 md:px-8 py-6 rounded-2xl shadow-xl flex justify-center items-center"
+      className="w-full h-full px-2 sm:px-4 md:px-8 py-4 sm:py-6 rounded-2xl shadow-xl flex justify-center items-center"
       style={{
         background:
           "linear-gradient(135deg, rgba(30,41,59,0.85) 60%, rgba(17,24,39,0.85) 100%)",

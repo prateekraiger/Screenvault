@@ -111,8 +111,10 @@ export default function Home() {
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-8 text-center text-white drop-shadow-lg tracking-tight break-words text-wrap w-full">
           Hall of Fame
         </h2>
-        <div className="w-full">
-          <ThreeDMarqueeDemo />
+        <div className="w-full flex justify-center">
+          <div className="w-full max-w-6xl h-64 sm:h-80 md:h-96 lg:h-[32rem] xl:h-[36rem] 2xl:h-[40rem]">
+            <ThreeDMarqueeDemo />
+          </div>
         </div>
       </div>
     </div>
