@@ -9,58 +9,148 @@ export const ThreeDMarquee = ({
   images: string[];
   className?: string;
 }) => {
-  // Split the images array into 4 equal parts
-  const chunkSize = Math.ceil(images.length / 4);
-  const chunks = Array.from({ length: 4 }, (_, colIndex) => {
-    const start = colIndex * chunkSize;
-    return images.slice(start, start + chunkSize);
+  // Ensure exactly 6 images per column for consistent layout
+  const imagesPerColumn = 6;
+  const totalColumns = 4;
+  const totalImagesNeeded = imagesPerColumn * totalColumns;
+
+  // Create extended images array by cycling through original images
+  const extendedImages: string[] = [];
+  for (let i = 0; i < totalImagesNeeded; i++) {
+    extendedImages.push(images[i % images.length]);
+  }
+
+  // Split into exactly 4 columns with exactly 6 images each
+  const chunks = Array.from({ length: totalColumns }, (_, colIndex) => {
+    const start = colIndex * imagesPerColumn;
+    return extendedImages.slice(start, start + imagesPerColumn);
   });
+
   return (
-    <div
+    <motion.div
       className={cn(
         "w-full max-w-[1800px] mx-auto h-[600px] sm:h-[700px] md:h-[800px] lg:h-[900px] xl:h-[1000px] rounded-3xl shadow-2xl overflow-hidden",
         className
       )}
+      animate={{
+        y: [0, -5, 0],
+        scale: [1, 1.01, 1],
+      }}
+      transition={{
+        duration: 12,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
     >
       <div className="flex w-full h-full items-center justify-center">
-        <div className="w-full h-full flex items-stretch justify-center">
-          <div className="grid w-full h-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <motion.div 
+          className="w-full h-full flex items-stretch justify-center"
+          animate={{
+            rotateY: [0, 1, 0, -1, 0],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          style={{
+            transformStyle: "preserve-3d",
+          }}
+        >
+          <div className="grid w-full h-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
             {chunks.map((subarray, colIndex) => (
               <motion.div
-                animate={{ y: colIndex % 2 === 0 ? 100 : -100 }}
+                animate={{
+                  y: colIndex % 2 === 0 ? [0, -80, 0] : [0, 80, 0],
+                }}
                 transition={{
-                  duration: colIndex % 2 === 0 ? 10 : 15,
+                  duration: 8,
                   repeat: Infinity,
-                  repeatType: "reverse",
+                  ease: "easeInOut",
+                  delay: colIndex * 0.5,
                 }}
                 key={colIndex + "marquee"}
-                className="flex flex-col items-stretch gap-4 h-full justify-between"
+                className="flex flex-col items-stretch gap-3 sm:gap-4 h-full justify-start"
+                style={{
+                  paddingTop: `${colIndex * 15}px`,
+                }}
               >
                 <GridLineVertical className="-left-4" offset="80px" />
                 {subarray.map((image, imageIndex) => (
-                  <div className="relative" key={imageIndex + image}>
+                  <div className="relative group" key={imageIndex + image}>
                     <GridLineHorizontal className="-top-4" offset="20px" />
-                    <motion.img
-                      whileHover={{
-                        y: -10,
+
+                    <motion.div
+                      className="relative"
+                      animate={{
+                        rotateY: [0, 2, 0, -2, 0],
+                        rotateX: [0, 1, 0, -1, 0],
                       }}
                       transition={{
-                        duration: 0.3,
+                        duration: 6 + imageIndex * 0.3,
+                        repeat: Infinity,
                         ease: "easeInOut",
+                        delay: (colIndex * 0.5) + (imageIndex * 0.2),
                       }}
-                      key={imageIndex + image}
-                      src={image}
-                      alt={`Image ${imageIndex + 1}`}
-                      className="w-full h-full min-h-[120px] max-h-[260px] sm:max-h-[320px] md:max-h-[400px] rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl"
-                    />
+                      whileHover={{
+                        y: -15,
+                        scale: 1.05,
+                        rotateY: 5,
+                        rotateX: -2,
+                      }}
+                      style={{
+                        transformStyle: "preserve-3d",
+                      }}
+                    >
+                      {/* Enhanced shadow */}
+                      <div className="absolute inset-0 bg-black/30 rounded-lg blur-md translate-y-2 scale-95" />
+
+                      {/* Main image with better effects */}
+                      <motion.img
+                        key={imageIndex + image}
+                        src={image}
+                        alt={`Image ${imageIndex + 1}`}
+                        className="w-full h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] rounded-lg object-cover ring-1 ring-white/20 hover:ring-white/40 transition-all duration-300 relative z-10"
+                        style={{
+                          boxShadow:
+                            "0 10px 30px rgba(0,0,0,0.4), 0 5px 15px rgba(0,0,0,0.3)",
+                        }}
+                        animate={{
+                          filter: [
+                            "brightness(1) contrast(1) saturate(1)",
+                            "brightness(1.08) contrast(1.08) saturate(1.08)",
+                            "brightness(1) contrast(1) saturate(1)",
+                          ],
+                        }}
+                        transition={{
+                          duration: 5,
+                          repeat: Infinity,
+                          ease: "easeInOut",
+                          delay: (colIndex * 0.8) + (imageIndex * 0.15),
+                        }}
+                      />
+
+                      {/* Shimmer effect on hover */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20" />
+
+                      {/* Subtle glow effect */}
+                      <div
+                        className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-5"
+                        style={{
+                          background:
+                            "linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 30%, rgba(255,255,255,0.1) 100%)",
+                          filter: "blur(1px)",
+                        }}
+                      />
+                    </motion.div>
                   </div>
                 ))}
               </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

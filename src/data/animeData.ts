@@ -90,6 +90,17 @@ export const animeData: Omit<Content, "id">[] = [
     genre: ["Action", "Animation", "Drama"],
   },
   {
+    title: "Bleach",
+    posterUrl:
+      "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7bSQNQuhHeInFMfzMwevfCiqcTm.jpg",
+    category: "Anime",
+    rating: 8.2,
+    review:
+      "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+    isFavorite: true,
+    genre: ["Action", "Fantasy", "Martial Arts"],
+  },
+  {
     title: "Vinland Saga",
     posterUrl:
       "https://images.plex.tv/photo?size=medium-360&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FvUHlpA5c1NXkds59reY3HMb4Abs.jpg",
@@ -100,6 +111,7 @@ export const animeData: Omit<Content, "id">[] = [
     isFavorite: true,
     genre: ["Historical", "Drama", "Action"],
   },
+
   {
     title: "Mob Psycho 100",
     posterUrl:
