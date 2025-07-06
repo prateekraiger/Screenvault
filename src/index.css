@@ -1,9 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0f172a;
+  --color-foreground: #f8fafc;
+  --color-border: #334155;
+  --color-card: #1e293b;
+  --color-card-foreground: #f8fafc;
+  --color-primary: #06b6d4;
+  --color-primary-foreground: #f8fafc;
+  --color-secondary: #64748b;
+  --color-secondary-foreground: #f8fafc;
+  --color-muted: #64748b;
+  --color-muted-foreground: #cbd5e1;
+  --color-accent: #3b82f6;
+  --color-accent-foreground: #f8fafc;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #f8fafc;
+  --color-input: #334155;
+  --color-ring: #06b6d4;
+  --radius: 0.5rem;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
 
 @layer base {
   .theme {
@@ -12,10 +34,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
   body {
     @apply bg-background text-foreground;
     font-family: 'Quantico', Arial, sans-serif;
