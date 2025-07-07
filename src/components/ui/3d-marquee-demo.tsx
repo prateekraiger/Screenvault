@@ -23,7 +23,7 @@ export default function ThreeDMarqueeDemo() {
     "https://wallpapercave.com/wp/wp14832979.webp",
     "https://wallpapercave.com/wp/wp5792289.jpg",
 
-    "https://wallpapercave.com/wp/wp3592166.jpg",
+    "https://wallpapercave.com/wp/wp14647899.jpg",
     "https://wallpapercave.com/wp/wp3592166.jpg",
     "https://wallpapercave.com/wp/wp3592166.jpg",
     "https://wallpapercave.com/wp/wp12130683.jpg",

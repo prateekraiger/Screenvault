@@ -32,12 +32,14 @@ export default function MoviesPage() {
           }}
         />
 
-        {/* Cinema-themed decorations */}
-        <div className="absolute inset-0 opacity-8">
-          <div className="absolute top-24 left-16 text-5xl">🎥</div>
-          <div className="absolute top-40 right-24 text-4xl">🍿</div>
-          <div className="absolute bottom-36 left-1/4 text-5xl">🏆</div>
-          <div className="absolute bottom-24 right-16 text-4xl">🎬</div>
+        {/* Optimized Cinema-themed decorations */}
+        <div className="absolute inset-0 opacity-6">
+          <div className="absolute top-24 left-16 text-6xl">🎥</div>
+          <div className="absolute top-40 right-24 text-5xl">🍿</div>
+          <div className="absolute bottom-36 left-1/4 text-6xl">🏆</div>
+          <div className="absolute bottom-24 right-16 text-5xl">🎬</div>
+          <div className="absolute top-60 left-1/3 text-4xl">🎞️</div>
+          <div className="absolute bottom-60 right-1/3 text-4xl">🌟</div>
         </div>
       </div>
 

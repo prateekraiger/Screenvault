@@ -32,12 +32,14 @@ export default function TVPage() {
           }}
         />
 
-        {/* TV-themed decorations */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-32 left-20 text-6xl">📺</div>
-          <div className="absolute top-20 right-32 text-4xl">🔥</div>
-          <div className="absolute bottom-40 left-1/4 text-5xl">🎨</div>
-          <div className="absolute bottom-32 right-20 text-4xl">✨</div>
+        {/* Optimized TV-themed decorations */}
+        <div className="absolute inset-0 opacity-8">
+          <div className="absolute top-32 left-20 text-7xl">📺</div>
+          <div className="absolute top-20 right-32 text-5xl">🔥</div>
+          <div className="absolute bottom-40 left-1/4 text-6xl">🎨</div>
+          <div className="absolute bottom-32 right-20 text-5xl">✨</div>
+          <div className="absolute top-60 right-16 text-4xl">📱</div>
+          <div className="absolute bottom-60 left-16 text-4xl">💫</div>
         </div>
       </div>
 

@@ -1,115 +1,53 @@
-// loader.tsx
+// Loader.tsx
 import React from "react";
 
-const Loader = () => {
+const Loader: React.FC = () => {
   return (
-    <>
-      <style>{`
-        @keyframes from-left {
-          0% {
-            z-index: 20;
-            opacity: 0;
-            transform: translate(-20px, -6px);
+    <div className="flex justify-center items-center h-screen">
+      <div className="relative w-12 h-12">
+        <div className="absolute w-12 h-1 bg-cyan-400 opacity-50 rounded-full top-16 left-0 animate-shadow"></div>
+        <div className="absolute w-full h-full bg-cyan-500 rounded-md animate-jump"></div>
+      </div>
+
+      <style jsx>{`
+        @keyframes jump {
+          15% {
+            border-bottom-right-radius: 0.75rem;
           }
-          20% {
-            z-index: 10;
-            opacity: 1;
-            transform: translate(0, 0);
+          25% {
+            transform: translateY(0.5625rem) rotate(22.5deg);
           }
-          40% {
-            z-index: 9;
-            transform: translate(0, 4px);
+          50% {
+            transform: translateY(1.125rem) scale(1, 0.9) rotate(45deg);
+            border-bottom-right-radius: 2.5rem;
           }
-          60% {
-            z-index: 8;
-            transform: translate(0, 8px);
-          }
-          80% {
-            z-index: 7;
-            opacity: 1;
-            transform: translate(0, 12px);
+          75% {
+            transform: translateY(0.5625rem) rotate(67.5deg);
           }
           100% {
-            z-index: 5;
-            transform: translate(0, 30px);
-            opacity: 0;
+            transform: translateY(0) rotate(90deg);
           }
         }
 
-        @keyframes from-right {
-          0% {
-            z-index: 20;
-            opacity: 0;
-            transform: translate(20px, -6px);
-          }
-          20% {
-            z-index: 10;
-            opacity: 1;
-            transform: translate(0, 0);
-          }
-          40% {
-            z-index: 9;
-            transform: translate(0, 4px);
-          }
-          60% {
-            z-index: 8;
-            transform: translate(0, 8px);
-          }
-          80% {
-            z-index: 7;
-            opacity: 1;
-            transform: translate(0, 12px);
-          }
+        @keyframes shadow {
+          0%,
           100% {
-            z-index: 5;
-            transform: translate(0, 30px);
-            opacity: 0;
+            transform: scale(1, 1);
+          }
+          50% {
+            transform: scale(1.2, 1);
           }
         }
 
-        .box-1 {
-          animation: from-left 4s infinite;
+        .animate-jump {
+          animation: jump 0.5s linear infinite;
         }
 
-        .box-2 {
-          animation: from-right 4s infinite;
-          animation-delay: 1s;
-        }
-
-        .box-3 {
-          animation: from-left 4s infinite;
-          animation-delay: 2s;
-        }
-
-        .box-4 {
-          animation: from-right 4s infinite;
-          animation-delay: 3s;
+        .animate-shadow {
+          animation: shadow 0.5s linear infinite;
         }
       `}</style>
-
-      <div className="scale-[3] h-[50px] w-[40px]">
-        <div className="relative opacity-0 left-[10px] box-1">
-          <div className="absolute bg-[#286cb5] w-[19px] h-[5px] skew-y-[-25deg] top-[14px] left-[10px]"></div>
-          <div className="absolute bg-[#2f85e0] w-[19px] h-[5px] skew-y-[25deg] top-[14px] left-[-9px]"></div>
-          <div className="absolute bg-[#5fa8f5] w-[20px] h-[20px] rotate-45 skew-x-[-20deg] skew-y-[-20deg]"></div>
-        </div>
-        <div className="relative opacity-0 left-[10px] box-2">
-          <div className="absolute bg-[#286cb5] w-[19px] h-[5px] skew-y-[-25deg] top-[14px] left-[10px]"></div>
-          <div className="absolute bg-[#2f85e0] w-[19px] h-[5px] skew-y-[25deg] top-[14px] left-[-9px]"></div>
-          <div className="absolute bg-[#5fa8f5] w-[20px] h-[20px] rotate-45 skew-x-[-20deg] skew-y-[-20deg]"></div>
-        </div>
-        <div className="relative opacity-0 left-[10px] box-3">
-          <div className="absolute bg-[#286cb5] w-[19px] h-[5px] skew-y-[-25deg] top-[14px] left-[10px]"></div>
-          <div className="absolute bg-[#2f85e0] w-[19px] h-[5px] skew-y-[25deg] top-[14px] left-[-9px]"></div>
-          <div className="absolute bg-[#5fa8f5] w-[20px] h-[20px] rotate-45 skew-x-[-20deg] skew-y-[-20deg]"></div>
-        </div>
-        <div className="relative opacity-0 left-[10px] box-4">
-          <div className="absolute bg-[#286cb5] w-[19px] h-[5px] skew-y-[-25deg] top-[14px] left-[10px]"></div>
-          <div className="absolute bg-[#2f85e0] w-[19px] h-[5px] skew-y-[25deg] top-[14px] left-[-9px]"></div>
-          <div className="absolute bg-[#5fa8f5] w-[20px] h-[20px] rotate-45 skew-x-[-20deg] skew-y-[-20deg]"></div>
-        </div>
-      </div>
-    </>
+    </div>
   );
 };
 

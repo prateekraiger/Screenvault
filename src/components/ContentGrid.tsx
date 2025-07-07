@@ -10,7 +10,7 @@ const ContentGrid: React.FC<ContentGridProps> = ({ content }) => {
   if (content.length === 0) {
     return (
       <div className="text-center py-20 space-y-4 text-cyan-100/80">
-        <div className="text-6xl mb-4">🎬</div>
+        <div className="text-6xl mb-4"></div>
         <h3 className="text-2xl font-semibold">No content found</h3>
         <p className="text-lg">
           Try adjusting your search terms or browse other tabs.

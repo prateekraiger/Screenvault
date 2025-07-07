@@ -61,6 +61,16 @@ export default function MusicPage() {
           }}
         />
         
+        {/* Optimized Music-themed decorations */}
+        <div className="absolute inset-0 opacity-6">
+          <div className="absolute top-24 left-16 text-6xl">🎵</div>
+          <div className="absolute top-40 right-24 text-5xl">🎧</div>
+          <div className="absolute bottom-36 left-1/4 text-6xl">🎼</div>
+          <div className="absolute bottom-24 right-16 text-5xl">🎸</div>
+          <div className="absolute top-60 left-1/3 text-4xl">🎹</div>
+          <div className="absolute bottom-60 right-1/3 text-4xl">🔊</div>
+        </div>
+
         {/* Static decorative elements */}
         <div className="absolute inset-0 opacity-20">
           {Array.from({ length: 6 }).map((_, i) => (
@@ -85,54 +95,33 @@ export default function MusicPage() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <motion.h1 
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 bg-gradient-to-r from-green-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-2xl"
+            className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 text-white"
+            style={{
+              textShadow: "0 0 20px rgba(34,197,94,0.8), 0 0 40px rgba(6,182,212,0.6)",
+            }}
             animate={{
-              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+              scale: [1, 1.02, 1],
             }}
             transition={{
-              duration: 8,
+              duration: 3,
               repeat: Infinity,
               ease: "easeInOut",
-            }}
-            style={{
-              backgroundSize: "200% 200%",
             }}
           >
             My Spotify
           </motion.h1>
+          
           <motion.div
-            className="flex items-center justify-center space-x-4 mb-6 h-12"
+            className="max-w-3xl mx-auto mb-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            {/* Animated equalizer bars with fixed container height */}
-            {Array.from({ length: 5 }).map((_, i) => (
-              <div key={i} className="flex items-end h-10">
-                <motion.div
-                  className="w-1 bg-gradient-to-t from-green-500 to-cyan-400 rounded-full"
-                  animate={{
-                    height: [8, 24, 12, 32, 8],
-                  }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: i * 0.1,
-                  }}
-                />
-              </div>
-            ))}
+            <p className="text-slate-200 text-lg md:text-xl leading-relaxed">
+              Explore my musical journey through Spotify - discover my current vibes,
+              favorite playlists, and the tracks that define my sound.
+            </p>
           </motion.div>
-          <motion.p 
-            className="text-cyan-100/90 text-xl max-w-3xl mx-auto leading-relaxed"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7, duration: 1 }}
-          >
-            Explore my musical journey through Spotify - discover my current vibes, 
-            favorite playlists, and the tracks that define my sound.
-          </motion.p>
         </motion.div>
 
         {/* Enhanced Grid Layout */}
@@ -334,7 +323,7 @@ export default function MusicPage() {
                   }}
                   transition={{ duration: 2, repeat: Infinity, delay: 2 }}
                 >
-                  🎵 Currently Playing
+                  Currently Playing
                 </motion.h2>
                 
                 <motion.a
@@ -378,7 +367,7 @@ export default function MusicPage() {
                   }}
                   transition={{ duration: 2, repeat: Infinity, delay: 3 }}
                 >
-                  🎧 Featured Playlist
+                  Featured Playlist
                 </motion.h2>
                 
                 <motion.div 
