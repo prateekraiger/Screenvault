@@ -50,7 +50,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#23272F]/90 backdrop-blur-xl border-b border-cyan-900/40 shadow-2xl w-full m-0 p-0 overflow-x-hidden">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-xl border-b border-emerald-500/20 shadow-2xl shadow-emerald-500/10 w-full m-0 p-0 overflow-x-hidden">
       <div className="w-full px-2 sm:px-4 lg:px-8 min-w-0">
         <div
           className="flex h-16 sm:h-20 items-center justify-between min-w-0 max-w-full overflow-x-hidden scrollbar-none"
@@ -78,11 +78,11 @@ export default function Navbar() {
                 <Link
                   key={index}
                   to={link.to}
-                  className="relative group text-cyan-200 hover:text-cyan-400 font-medium text-sm sm:text-base transition-all duration-300 py-1 sm:py-2 px-2 sm:px-3 rounded-lg hover:bg-[#164E63]/40 focus:bg-[#164E63]/60 focus:text-cyan-300 min-w-0 max-w-full"
+                  className="relative group text-slate-300 hover:text-emerald-300 font-medium text-sm sm:text-base transition-all duration-300 py-1 sm:py-2 px-2 sm:px-3 rounded-lg hover:bg-emerald-500/10 focus:bg-emerald-500/20 focus:text-emerald-300 min-w-0 max-w-full"
                   style={{ wordBreak: "break-word" }}
                 >
                   {link.label}
-                  <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-cyan-400 to-teal-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-emerald-400 to-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                 </Link>
               ))}
             </nav>
@@ -122,7 +122,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-xl text-cyan-300 hover:text-cyan-400 hover:bg-[#164E63]/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 flex-shrink-0"
+              className="lg:hidden p-2 rounded-xl text-slate-300 hover:text-emerald-300 hover:bg-emerald-500/10 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 flex-shrink-0"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
@@ -140,18 +140,18 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-cyan-900/40 bg-[#23272F]/95 backdrop-blur-xl">
+        <div className="lg:hidden border-t border-emerald-500/20 bg-slate-900/98 backdrop-blur-xl">
           <div className="px-2 sm:px-4 py-4 sm:py-6 space-y-2 sm:space-y-4">
             {navigationLinks.map((link, index) => (
               <Link
                 key={index}
                 to={link.to}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block px-2 sm:px-4 py-2 sm:py-3 text-cyan-200 hover:text-cyan-400 font-medium text-base rounded-xl hover:bg-[#164E63]/40 transition-all duration-200 group break-words text-wrap min-w-0 max-w-full"
+                className="block px-2 sm:px-4 py-2 sm:py-3 text-slate-300 hover:text-emerald-300 font-medium text-base rounded-xl hover:bg-emerald-500/10 transition-all duration-200 group break-words text-wrap min-w-0 max-w-full"
               >
                 <span className="flex items-center justify-between min-w-0 max-w-full">
                   {link.label}
-                  <span className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
                 </span>
               </Link>
             ))}

@@ -270,6 +270,145 @@ export default function Home() {
           </motion.div>
         </div>
       </motion.section>
+
+      {/* Why Choose ScreenVault Section */}
+      <motion.section 
+        className="w-full flex justify-center px-4 sm:px-6 md:px-8 py-16"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="w-full max-w-7xl">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+          >
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white tracking-tight"
+                style={{
+                  textShadow: "0 0 30px rgba(16,185,129,0.6), 0 0 60px rgba(6,182,212,0.4)",
+                }}>
+              Why Choose ScreenVault?
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Experience entertainment discovery like never before with our cutting-edge features
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: "⚡",
+                title: "Lightning Fast",
+                description: "Built with modern tech stack for instant loading and smooth interactions",
+                gradient: "from-yellow-400 to-orange-500"
+              },
+              {
+                icon: "🎨",
+                title: "Beautiful Design",
+                description: "Stunning UI with fluid animations and responsive design across all devices",
+                gradient: "from-pink-400 to-purple-500"
+              },
+              {
+                icon: "🔍",
+                title: "Smart Discovery",
+                description: "Intelligent recommendations and advanced search to find your next favorite",
+                gradient: "from-emerald-400 to-cyan-500"
+              },
+              {
+                icon: "📱",
+                title: "Cross-Platform",
+                description: "Seamless experience on desktop, tablet, and mobile with PWA support",
+                gradient: "from-blue-400 to-indigo-500"
+              },
+              {
+                icon: "💾",
+                title: "Personal Vault",
+                description: "Save your favorites, create watchlists, and track your viewing progress",
+                gradient: "from-teal-400 to-green-500"
+              },
+              {
+                icon: "🌟",
+                title: "Always Updated",
+                description: "Fresh content and new features added regularly to enhance your experience",
+                gradient: "from-violet-400 to-purple-500"
+              }
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                className="group"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ 
+                  delay: 0.4 + index * 0.1, 
+                  duration: 0.6,
+                  ease: "easeOut"
+                }}
+                whileHover={{ 
+                  scale: 1.02,
+                  y: -5
+                }}
+              >
+                <div className="relative p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 h-full transition-all duration-300 group-hover:border-slate-600/70 group-hover:shadow-xl group-hover:shadow-cyan-500/10">
+                  {/* Icon with animated background */}
+                  <motion.div 
+                    className="relative w-16 h-16 mb-6 mx-auto flex items-center justify-center rounded-xl bg-gradient-to-br text-3xl"
+                    style={{
+                      background: `linear-gradient(135deg, var(--tw-gradient-stops))`,
+                    }}
+                    className={`bg-gradient-to-br ${feature.gradient} relative w-16 h-16 mb-6 mx-auto flex items-center justify-center rounded-xl text-3xl group-hover:scale-110 transition-transform duration-300`}
+                    whileHover={{ 
+                      rotate: [0, -10, 10, 0],
+                      transition: { duration: 0.5 }
+                    }}
+                  >
+                    <span className="relative z-10">{feature.icon}</span>
+                    <div className="absolute inset-0 rounded-xl bg-gradient-to-br opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300" />
+                  </motion.div>
+                  
+                  {/* Title */}
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 text-center group-hover:text-emerald-300 transition-colors duration-300">
+                    {feature.title}
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="text-slate-300 text-center leading-relaxed group-hover:text-slate-200 transition-colors duration-300">
+                    {feature.description}
+                  </p>
+                  
+                  {/* Hover glow effect */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-cyan-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Call to Action */}
+          <motion.div 
+            className="text-center mt-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1, duration: 0.6 }}
+          >
+            <motion.button
+              className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              whileHover={{ 
+                boxShadow: "0 0 30px rgba(16,185,129,0.5)",
+                y: -2
+              }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => navigate('/all')}
+            >
+              Explore All Content
+            </motion.button>
+          </motion.div>
+        </div>
+      </motion.section>
     </div>
   );
 }

@@ -7,12 +7,13 @@
 <div align="center">
   <h3>🚀 Your Personal Entertainment Vault</h3>
   <p><em>Discover, track, and curate your favorite movies, TV shows, anime, web series, music, and games</em></p>
-  
-  ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat-square&logo=react)
-  ![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?style=flat-square&logo=typescript)
-  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.11-38B2AC?style=flat-square&logo=tailwind-css)
-  ![Vite](https://img.shields.io/badge/Vite-5.4.2-646CFF?style=flat-square&logo=vite)
-  ![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.19.1-0055FF?style=flat-square&logo=framer)
+
+![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.11-38B2AC?style=flat-square&logo=tailwind-css)
+![Vite](https://img.shields.io/badge/Vite-5.4.2-646CFF?style=flat-square&logo=vite)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.19.1-0055FF?style=flat-square&logo=framer)
+
 </div>
 
 ---
@@ -20,6 +21,7 @@
 ## ✨ Features
 
 ### 🎯 **Core Functionality**
+
 - 🎬 **Movies** - Browse and discover cinematic masterpieces
 - 📺 **TV Shows** - Explore binge-worthy series with captivating storylines
 - 🌐 **Web Series** - Digital storytelling at its finest
@@ -28,6 +30,7 @@
 - 🎮 **Games** - Interactive gaming experiences and adventures
 
 ### 🚀 **Technical Highlights**
+
 - ⚡ **Lightning Fast** - Built with Vite for optimal performance
 - 📱 **Fully Responsive** - Seamless experience across all devices
 - 🎨 **Modern UI/UX** - Beautiful animations with Framer Motion
@@ -45,6 +48,7 @@
 <td>
 
 **Frontend**
+
 - ⚛️ React 18.3.1
 - 🎯 TypeScript 5.5.3
 - 🎨 Tailwind CSS 4.1.11
@@ -55,6 +59,7 @@
 <td>
 
 **Development**
+
 - ⚡ Vite 5.4.2
 - 🔧 ESLint 9.9.1
 - 📦 PostCSS 8.5.6
@@ -143,11 +148,13 @@ src/
 ## 🎨 Design System
 
 ### 🌈 Color Palette
+
 - **Primary**: Emerald (`#10b981`) → Cyan (`#06b6d4`) → Blue (`#3b82f6`)
 - **Background**: Dark slate with gradient overlays
 - **Accent**: Teal (`#14b8a6`) for highlights
 
 ### ✨ Animation Features
+
 - 🔄 **3D Hover Effects** - Cards rotate and lift on interaction
 - 🌊 **Gradient Borders** - Animated rainbow borders on hover
 - 💫 **Floating Icons** - Subtle icon animations with pulse effects
@@ -170,11 +177,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+- This project is licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
   <h3>🌟 Star this repository if you found it helpful!</h3>
-  <p>Made with ❤️ by <strong>Your Name</strong></p>
+  <p>Made with ❤️ by <strong>Pratik</strong></p>
 </div>
