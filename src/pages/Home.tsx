@@ -58,26 +58,78 @@ const categoryDescriptions: Record<string, string> = {
   Games: "Interactive gaming experiences and epic adventures to explore!",
 };
 
-// Optimized card component with memoization
-const CategoryCard = memo(({ route, onClick }: { route: any; onClick: () => void }) => (
+// Enhanced card component with unique animations
+const CategoryCard = memo(({ route, onClick, index }: { route: any; onClick: () => void; index: number }) => (
   <motion.button
     onClick={onClick}
-    className="w-full min-w-0"
-    whileHover={{ scale: 1.01 }}
-    whileTap={{ scale: 0.99 }}
-    transition={{ duration: 0.15, ease: "easeOut" }}
+    className="w-full min-w-0 relative group"
+    whileHover={{ 
+      scale: 1.02,
+      rotateY: 5,
+      rotateX: 5,
+    }}
+    whileTap={{ scale: 0.98 }}
+    transition={{ 
+      duration: 0.2, 
+      ease: "easeOut",
+      type: "spring",
+      stiffness: 300,
+      damping: 20
+    }}
+    style={{
+      transformStyle: "preserve-3d",
+      perspective: "1000px"
+    }}
   >
-    <MagicCard className="rounded-3xl h-full">
-      <BackgroundGradient className="rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center cursor-pointer shadow-xl group min-w-0 w-full h-full border-0">
-        {React.cloneElement(route.icon, {
-          className: "w-7 h-7 sm:w-8 sm:h-8 mb-2 sm:mb-3 transition-transform duration-200 group-hover:scale-105 " + route.icon.props.className,
-        })}
-        <span className="text-base sm:text-xl md:text-2xl font-bold text-cyan-100 mb-1 sm:mb-2 tracking-tight group-hover:text-cyan-300 transition-colors break-words text-wrap">
-          {route.label}
-        </span>
-        <span className="text-cyan-200/90 text-xs sm:text-sm text-center mt-1 sm:mt-2 font-medium break-words text-wrap leading-relaxed">
-          {categoryDescriptions[route.label]}
-        </span>
+    <MagicCard className="rounded-3xl h-full overflow-hidden">
+      <BackgroundGradient className="rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center cursor-pointer shadow-xl group min-w-0 w-full h-full border-0 relative animated-card">
+        {/* Animated border effect */}
+        <div className="absolute inset-0 rounded-3xl border-2 border-transparent bg-gradient-to-r from-emerald-400 via-cyan-400 via-blue-500 to-teal-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-x"></div>
+        <div className="absolute inset-[2px] rounded-3xl bg-slate-800/90 z-10"></div>
+        
+        {/* Content */}
+        <div className="relative z-20 flex flex-col items-center justify-center h-full">
+          {/* Floating icon with pulse effect */}
+          <motion.div
+            className="relative mb-2 sm:mb-3"
+            animate={{
+              y: [0, -5, 0],
+              rotate: [0, 5, -5, 0]
+            }}
+            transition={{
+              duration: 3 + index * 0.5,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            {React.cloneElement(route.icon, {
+              className: "w-7 h-7 sm:w-8 sm:h-8 transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_20px_rgba(16,185,129,0.7)] group-hover:filter group-hover:brightness-125 " + route.icon.props.className,
+            })}
+            {/* Glowing ring effect */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 opacity-0 group-hover:opacity-40 blur-md animate-pulse -z-10 scale-150"></div>
+          </motion.div>
+          
+          {/* Title with typewriter effect on hover */}
+          <motion.span 
+            className="text-base sm:text-xl md:text-2xl font-bold text-cyan-100 mb-1 sm:mb-2 tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-emerald-300 group-hover:via-cyan-300 group-hover:to-blue-400 transition-all duration-500 break-words text-wrap"
+            whileHover={{
+              scale: 1.05,
+              textShadow: "0 0 25px rgba(16,185,129,0.9), 0 0 35px rgba(6,182,212,0.6)"
+            }}
+          >
+            {route.label}
+          </motion.span>
+          
+          {/* Description with slide-up animation */}
+          <motion.span 
+            className="text-cyan-200/90 text-xs sm:text-sm text-center mt-1 sm:mt-2 font-medium break-words text-wrap leading-relaxed group-hover:text-emerald-100 group-hover:drop-shadow-[0_0_10px_rgba(16,185,129,0.5)] transition-all duration-500"
+            initial={{ opacity: 0.8 }}
+            whileHover={{ opacity: 1, y: -2 }}
+          >
+            {categoryDescriptions[route.label]}
+          </motion.span>
+          
+        </div>
       </BackgroundGradient>
     </MagicCard>
   </motion.button>
@@ -159,6 +211,7 @@ export default function Home() {
               <CategoryCard
                 route={route}
                 onClick={navigationHandlers[route.path]}
+                index={index}
               />
             </motion.div>
           ))}
