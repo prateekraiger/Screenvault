@@ -33,7 +33,7 @@ function MainApp() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setLoading(false), 2000);
+    const timeout = setTimeout(() => setLoading(false), 1200);
     return () => clearTimeout(timeout);
   }, []);
 
@@ -42,7 +42,7 @@ function MainApp() {
       <Background />
       {/* Loader overlay for whole page with fade animation */}
       <div
-        className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#23272F] transition-opacity duration-700 pointer-events-none ${
+        className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#23272F] transition-opacity duration-1000 pointer-events-none ${
           loading ? "opacity-100" : "opacity-0"
         }`}
         style={{ visibility: loading ? "visible" : "hidden" }}

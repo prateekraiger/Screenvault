@@ -151,9 +151,12 @@ body {
 }
 
 @keyframes gradientShift {
-  0%, 100% {
+
+  0%,
+  100% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
@@ -166,9 +169,12 @@ body {
 }
 
 @keyframes gradient-x {
-  0%, 100% {
+
+  0%,
+  100% {
     background-position: left center;
   }
+
   50% {
     background-position: right center;
   }
@@ -176,15 +182,20 @@ body {
 
 /* Floating animation for cards */
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
+
   25% {
     transform: translateY(-5px) rotate(1deg);
   }
+
   50% {
     transform: translateY(-3px) rotate(0deg);
   }
+
   75% {
     transform: translateY(-7px) rotate(-1deg);
   }
@@ -192,9 +203,12 @@ body {
 
 /* Pulse glow effect */
 @keyframes pulseGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 25px rgba(16, 185, 129, 0.4), 0 0 35px rgba(6, 182, 212, 0.3);
   }
+
   50% {
     box-shadow: 0 0 35px rgba(6, 182, 212, 0.6), 0 0 45px rgba(59, 130, 246, 0.5), 0 0 55px rgba(20, 184, 166, 0.4);
   }
@@ -202,10 +216,13 @@ body {
 
 /* Sparkle animation */
 @keyframes sparkle {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0;
     transform: scale(0);
   }
+
   50% {
     opacity: 1;
     transform: scale(1);
@@ -221,18 +238,23 @@ body {
 
 /* Enhanced sparkle effects */
 @keyframes sparkleEnhanced {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0;
     transform: scale(0) rotate(0deg);
   }
+
   25% {
     opacity: 0.5;
     transform: scale(0.5) rotate(90deg);
   }
+
   50% {
     opacity: 1;
     transform: scale(1) rotate(180deg);
   }
+
   75% {
     opacity: 0.7;
     transform: scale(0.8) rotate(270deg);
@@ -290,4 +312,47 @@ html {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+@keyframes jump {
+  15% {
+    border-bottom-right-radius: 0.75rem;
+  }
+
+  25% {
+    transform: translateY(0.5625rem) rotate(22.5deg);
+  }
+
+  50% {
+    transform: translateY(1.125rem) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 2.5rem;
+  }
+
+  75% {
+    transform: translateY(0.5625rem) rotate(67.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+@keyframes shadow {
+
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1);
+  }
+}
+
+.animate-jump {
+  animation: jump 0.5s linear infinite;
+}
+
+.animate-shadow {
+  animation: shadow 0.5s linear infinite;
 }
